@@ -2,7 +2,7 @@
   display: flex;
 }
 @mixin transition {
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 @mixin transition-modal {
   transition: all 0.2s ease-in-out;
@@ -14,8 +14,6 @@
   padding: 18px 0 18px 35px;
   margin-bottom: 11px;
   font-size: 1.5em;
-  background-color: rgba(255, 255, 255, 0);
-  color: #666060;
   outline: none;
 }
 

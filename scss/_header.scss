@@ -1,0 +1,65 @@
+.burger {
+  display: none;
+}
+.header {
+  @include dspFlex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  margin: 0 auto;
+  .site_description {
+    margin: 0 0 0 -5%;
+  }
+  .btn {
+    @include btn;
+    max-width: 240px;
+    height: 50px;
+    padding: 0 40px;
+    color: $color_white;
+    &:hover {
+      @include btn_hover;
+    }
+  }
+  .work_schedule {
+    @include dspFlex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: 15px 0 0;
+    .work_time {
+      font-size: 0.9em;
+    }
+    .work_phone {
+      margin: 20px 0 0;
+      a {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.navbar {
+  background-color: $color_white;
+  ul {
+    @include dspFlex;
+    justify-content: center;
+    li {
+      font-size: 1.325em;
+      a {
+        padding: 35px 0;
+        margin: 0 12px;
+        display: inline-block;
+        border-bottom: 3px solid transparent;
+        color: rgba(18, 18, 18, 0.85);
+        @include transition;
+        &:hover {
+          color: $color_link-active;
+          border-bottom: 3px solid $color_link-active;
+        }
+        &:active {
+          border-bottom: 3px solid $color_link-active;
+          color: $color_link-active;
+        }
+      }
+    }
+  }
+}

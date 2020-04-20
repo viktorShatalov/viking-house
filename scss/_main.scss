@@ -1,0 +1,52 @@
+// section advantages
+#advantages {
+  .conteiner {
+    h1 {
+      padding: 50px 0;
+    }
+  }
+}
+.advantages__items,
+.item,
+.item__img {
+  @include dspFlex;
+}
+.advantages__items {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .item {
+    width: 211px;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    margin: 0 auto 35px;
+    .item__img {
+      background-color: $color_circle-advantage;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      @include dspFlex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0 15px;
+    }
+    .item__description {
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}
+
+// section popular
+
+#popular {
+  h2 {
+      max-width: 490px;
+    &::after {
+      right: 0;
+    }
+    &::before {
+      left: 0;
+    }
+  }
+}

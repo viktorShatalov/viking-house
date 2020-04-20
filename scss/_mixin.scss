@@ -23,9 +23,6 @@
   text-shadow: 0px 4px 7px rgb(0, 0, 0);
 }
 
-@mixin instaShadow {
-  box-shadow: 0px 0px 5px 5px $color_orange;
-}
 @mixin boxShadow_product {
   box-shadow: 0px 0px 30px 0px rgba(37, 25, 2, 0.33);
 }

@@ -1,4 +1,6 @@
 @import "_mixin";
+@import "_variables";
+
 * {
   margin: 0;
   padding: 0;
@@ -12,14 +14,12 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto normal";
+  font-family: "Ubuntu normal";
   font-size: 16px;
-  color: #333333;
 }
 .conteiner {
   max-width: $widthContent;
-  margin: 0 auto;
-  padding: 0 10px;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -34,10 +34,12 @@ img {
   border: 0;
   max-width: 100%;
 }
-h2{
-  font-size: 3.125em;
-  text-align: center;
-}
 .lock {
   overflow: hidden;
+}
+h1,
+h2 {
+  font-size: 2.25em;
+  color: $color_text-headers;
+  font-family: "Next_Art normal";
 }

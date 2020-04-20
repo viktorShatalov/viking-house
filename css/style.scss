@@ -1,0 +1,25 @@
+@import "_fonts";
+@import "_variables";
+@import "_mixin";
+@import "_buttons";
+
+/* общие настройки */
+@import "_settings";
+
+// modal
+@import "_modal";
+
+// header
+@import "_header";
+
+// main
+@import "_main.scss";
+
+// dojd
+@import "_page";
+
+// footer
+@import "_footer.scss";
+
+// media-query
+@import "_media.scss";

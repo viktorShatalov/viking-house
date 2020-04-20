@@ -1,0 +1,16 @@
+@import "./mixin";
+@import "./variables";
+
+// // кнопки
+@mixin button {
+  background: $color_orange;
+  border: 5px solid $color_orange;
+  color: $color_white;
+  cursor: pointer;
+  @include transition;
+  &:hover {
+    color: $color_orange;
+    background: $color_white;
+    border: 5px solid $color_orange;
+  }
+}

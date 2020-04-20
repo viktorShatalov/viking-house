@@ -1,0 +1,117 @@
+// modal**************************************************
+.modal {
+  position: fixed;
+  padding: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 2px;
+  box-shadow: 0px 0px 59px 0px rgba(35, 19, 0, 0.58);
+  width: 100%;
+  max-width: 535px;
+  background: url(../img/modal__.png) no-repeat center;
+  z-index: 6;
+  @include transition-modal;
+  .modal__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+}
+.modal-body {
+  @include dspFlex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 220px;
+    object-fit: cover;
+  }
+}
+.modal-title {
+  text-align: center;
+  h2 {
+    font-size: 1.9em;
+    color: #247b28;
+    margin: 35px 0 15px;
+  }
+  p {
+    font-size: 1.25em;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+  }
+}
+.close-button {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  z-index: 4;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+  span {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 35px;
+    border: 1px solid #777777;
+    transform: rotate(-46deg);
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -1px;
+      width: 34px;
+      border: 1px solid #777777;
+      transform: rotate(90deg);
+    }
+  }
+}
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.form-input__modal {
+  @include dspFlex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  input[type="text"] {
+    @include input;
+    background: #ffffff;
+    border: 2px solid #777777;
+    height: 60px;
+    max-width: 360px;
+    border-radius: 50px;
+    color: #828282;
+  }
+  input[type="submit"] {
+    border: none;
+    background: #247b28;
+    color: white;
+    border-radius: 50px;
+    height: 60px;
+    max-width: 360px;
+    font-size: 1.25em;
+    cursor: pointer;
+  }
+}
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  pointer-events: none;
+  z-index: 5;
+  @include transition-modal;
+}
+#overlay.active {
+  opacity: 0.6;
+  pointer-events: all;
+}
+.border {
+  border: 1px solid #777777;
+}

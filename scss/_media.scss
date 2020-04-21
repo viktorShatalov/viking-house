@@ -9,7 +9,9 @@
   h2::before,
   h2::after,
   .navbar,
-  .header .work_schedule {
+  .header .work_schedule,
+  .aboutUs__content .left,
+  .reviews__slider .slider__item .item__img {
     display: none;
   }
   .header {
@@ -68,5 +70,57 @@
   .burger.active::after {
     transform: rotate(-45deg);
     bottom: 8px;
+  }
+  // main
+  .tab-header {
+    flex-wrap: wrap;
+  }
+  .tab-header__item {
+    margin: 0 0 15px;
+  }
+  .reviews__slider .slider__item .item__text {
+    max-width: 320px;
+    margin: 0 10px;
+  }
+  #reviews .content .btn-all__reviews {
+    bottom: -45px;
+  }
+  .slick-dots li button::before {
+    top: -2px;
+  }
+  .reviews__slider .slick-next {
+    right: 36%;
+  }
+  .reviews__slider .slick-prev {
+    left: 36%;
+  }
+  .map {
+    padding-bottom: 80%;
+  }
+  #tab__slider-1,
+  #tab__slider-2,
+  #tab__slider-3,
+  #slider {
+    max-width: 310px;
+    margin: 0 auto;
+  }
+  // footer
+  #footer {
+    .conteiner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .contacts {
+      text-align: center;
+      .mail {
+        margin: 15px 20px;
+      }
+    }
+  }
+  .footer__menu ul {
+    margin: 0 10px;
+  }
+  .social {
+    margin-top: 20px;
   }
 }

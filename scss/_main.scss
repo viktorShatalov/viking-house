@@ -41,12 +41,348 @@
 
 #popular {
   h2 {
-      max-width: 490px;
+    max-width: 490px;
     &::after {
       right: 0;
     }
     &::before {
       left: 0;
+    }
+  }
+}
+.tab-header {
+  @include dspFlex;
+  align-items: center;
+  justify-content: center;
+}
+.tab-header__item {
+  font-size: 1.3125em;
+  position: relative;
+  padding: 10px 15px 0;
+  margin: 0 0 60px;
+  cursor: pointer;
+  color: $color_text-p;
+  border-bottom: 3px solid transparent;
+  @include transition;
+  &:hover {
+    border-bottom: 3px solid $color_link-hover;
+  }
+  &.active {
+    border-bottom: 3px solid $color_link-active;
+  }
+}
+.tab-content__item {
+  display: none;
+  &.active {
+    display: block;
+  }
+  .js-tab-content__btn {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  #tab__slider-1,
+  #tab__slider-2,
+  #tab__slider-3 {
+    .slider__item {
+      max-width: 277px;
+      margin: 0 9px;
+      padding: 5px;
+      background-color: $color_white;
+      .item__img {
+        overflow: hidden;
+        img {
+          width: 270px;
+          height: 210px;
+          object-fit: cover;
+          @include transition;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+      .description__option {
+        @include dspFlex;
+        justify-content: space-around;
+        margin: 20px 0;
+        .btn {
+          @include btn;
+          width: 115px;
+          height: 40px;
+          background-color: $color_btnPopular-bg;
+          color: $color_white;
+          border-radius: 5px;
+          text-transform: inherit;
+          border: 2px solid $color_btnPopular-bg;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        .full__construction {
+          .btn {
+            background-color: $color_white;
+            color: $color_btnPopular-bg;
+            border: 2px solid $color_btnPopular-bg;
+          }
+        }
+      }
+    }
+    .description__text {
+      text-align: center;
+      .name__house {
+        width: 190px;
+        margin: 0 auto 10px;
+      }
+      .price__now {
+        color: $color_pseudo-el;
+        margin: 0 auto 5px;
+      }
+      .price__house {
+        font-size: 1.5em;
+        margin: 0 auto 10px;
+      }
+      .size__house {
+        margin: 0 auto 20px;
+      }
+    }
+    .more__details-btn {
+      text-align: center;
+      margin: 0 auto 15px;
+      .btn {
+        @include btn;
+        width: 240px;
+        height: 50px;
+        &:hover {
+          @include btn_hover;
+        }
+      }
+    }
+  }
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+  padding: 0 0 50px;
+}
+.slick-dots {
+  bottom: 10px;
+  li {
+    border-radius: 50%;
+    border: 3px solid rgb(207, 223, 223);
+    button {
+      &::before {
+        font-size: 40px;
+        top: -3px;
+        left: -3px;
+        color: rgb(207, 223, 223);
+        opacity: 1;
+      }
+    }
+    &.slick-active {
+      border: 3px solid rgb(237, 46, 53);
+      button {
+        &:before {
+          color: rgb(237, 46, 53);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+// ready__project
+#ready__project {
+  h2 {
+    max-width: 490px;
+    &::after {
+      right: -5px;
+    }
+    &::before {
+      left: -5px;
+    }
+  }
+  padding: 0 0 20px;
+}
+.ready__project-slider {
+  #slider {
+    .slider__item {
+      max-width: 277px;
+      margin: 0 9px;
+      padding: 5px;
+      background-color: $color_white;
+      .item__img {
+        overflow: hidden;
+        img {
+          width: 270px;
+          height: 210px;
+          object-fit: cover;
+          @include transition;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+    .item__description {
+      padding: 25px 0 15px;
+      text-align: center;
+      .name__house {
+        width: 190px;
+        margin: 0 auto 15px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+// map
+#map {
+  h2 {
+    max-width: 670px;
+    &::after {
+      right: 0;
+    }
+    &::before {
+      left: 0;
+    }
+  }
+}
+.map {
+  min-width: 58%;
+  overflow: hidden;
+  padding-bottom: 35%;
+  position: relative;
+  height: 0;
+  iframe {
+    left: 0;
+    top: 0;
+    width: 750px;
+    height: 450px;
+    position: absolute;
+  }
+}
+
+//  about us
+
+.aboutUs__content {
+  @include dspFlex;
+  justify-content: space-between;
+  margin: 0 0 30px;
+  .left {
+    width: 100%;
+    max-width: 300px;
+    img {
+      width: 100%;
+      max-width: 260px;
+    }
+  }
+  .right {
+    p {
+      margin-bottom: 30px;
+      color: $color_text-p;
+    }
+  }
+}
+
+// reviews
+#reviews {
+  padding: 0 0 135px;
+  h2 {
+    max-width: 220px;
+    &::after {
+      right: 0;
+    }
+    &::before {
+      left: 0;
+    }
+  }
+  .content {
+    position: relative;
+    .btn-all__reviews {
+      position: absolute;
+      bottom: -25px;
+      right: 0;
+      a {
+        text-decoration: underline;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.25em;
+        @include transition;
+        &:hover {
+          opacity: 0.85;
+        }
+      }
+    }
+  }
+}
+.reviews__slider {
+  .slick-prev:before,
+  .slick-next:before {
+    color: $color_white;
+    background-color: #545a60;
+    font-family: inherit;
+    padding: 4px 15px;
+    font-size: 38px;
+  }
+  .slick-prev,
+  .slick-next {
+    top: 120%;
+  }
+  .slick-prev {
+    left: 46.5%;
+  }
+  .slick-next {
+    right: 46.5%;
+  }
+  .slick-prev:before {
+    content: "<";
+  }
+  .slick-next:before {
+    content: ">";
+  }
+  .slider__item {
+    @include dspFlex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .item__img {
+      padding: 5px 20px;
+      img {
+        width: 270px;
+        height: 210px;
+        object-fit: contain;
+      }
+    }
+    .item__text {
+      max-width: 855px;
+      .name {
+        margin-bottom: 10px;
+        font-size: 1.125em;
+      }
+      .date {
+        margin-bottom: 10px;
+      }
+      .text {
+        line-height: 24px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+      }
+      .btn__details {
+        margin-top: 25px;
+        a {
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 1.25em;
+          @include transition;
+          &::after {
+            content: ">>";
+            font-weight: bold;
+            font-size: 1em;
+          }
+          &:hover {
+            opacity: 0.85;
+          }
+        }
+      }
     }
   }
 }

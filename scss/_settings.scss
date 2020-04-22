@@ -61,7 +61,7 @@ h2 {
   &::after {
     content: "";
     width: 15px;
-    height: 3px;
+    height: 4px;
     background-color: $color_pseudo-el;
     position: absolute;
     top: 50%;
@@ -81,7 +81,7 @@ h2 {
 }
 #breadcumbs {
   background-color: $color_container_bg;
-  padding: 10px 0 10px 20px;
+  padding: 20px 0 10px 20px;
   ul {
     @include dspFlex;
     font-weight: bold;
@@ -107,6 +107,29 @@ h2 {
             cursor: inherit;
           }
         }
+      }
+    }
+  }
+}
+#pagination {
+  ul {
+    @include dspFlex;
+    justify-content: center;
+    a {
+      margin: 0 10px;
+      padding: 10px 12px;
+      border: 2px solid $color_pagination;
+      border-radius: 10px;
+      @include transition;
+      li {
+        color: $color_black;
+        font-weight: bold;
+      }
+      &.active {
+        border: 2px solid $color_pagination-active;
+      }
+      &:hover {
+        border: 2px solid $color_pagination-active;
       }
     }
   }

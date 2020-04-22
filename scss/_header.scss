@@ -55,6 +55,15 @@
           color: $color_link-active;
           border-bottom: 3px solid $color_link-active;
         }
+        &.is-active,
+        &[aria-current="page"] {
+          border-bottom: 3px solid $color_link-active;
+          color: $color_link-active;
+        }
+        &.active {
+          border-bottom: 3px solid $color_link-active;
+          color: $color_link-active;
+        }
         &:active {
           border-bottom: 3px solid $color_link-active;
           color: $color_link-active;

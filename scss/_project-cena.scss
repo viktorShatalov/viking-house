@@ -1,0 +1,136 @@
+#proekty {
+  h1 {
+    max-width: 380px;
+    margin: 0 auto;
+    &::after {
+      right: 0;
+    }
+    &::before {
+      left: 0;
+    }
+  }
+}
+.proekty__content {
+  .category__items {
+    @include dspFlex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    &:hover .item__head {
+      border: 3px solid $color_btnPopular-bg-opacity;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+    }
+    .item__head {
+      position: absolute;
+      top: 38%;
+      left: 46%;
+      border-radius: 100px;
+      width: 100%;
+      height: 50px;
+      background-color: $color_white;
+      border: 3px solid $color_btnPopular-bg;
+      opacity: 0.87;
+      transform: translateX(-46%);
+      @include dspFlex;
+      justify-content: center;
+      align-items: center;
+      @include transition;
+      h3 {
+        color: $color_text-p;
+      }
+    }
+  }
+}
+.all-category-products {
+  padding: 50px 0;
+  @include dspFlex;
+  align-items: center;
+  flex-wrap: wrap;
+  .slider__item {
+    max-width: 277px;
+    margin: 10px 9px;
+    padding: 5px;
+    background-color: $color_white;
+    @include transition;
+    &:hover {
+      @include boxShadow;
+    }
+    .item__img {
+      overflow: hidden;
+      img {
+        width: 270px;
+        height: 210px;
+        object-fit: cover;
+        @include transition;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+    .description__option {
+      @include dspFlex;
+      justify-content: space-around;
+      margin: 20px 0;
+      .btn.active {
+        @include btn;
+        width: 115px;
+        height: 40px;
+        background-color: $color_btnPopular-bg;
+        color: $color_white;
+        border-radius: 5px;
+        text-transform: inherit;
+        border: 2px solid $color_btnPopular-bg;
+      }
+      .btn {
+        @include btn;
+        width: 115px;
+        height: 40px;
+        border-radius: 5px;
+        text-transform: inherit;
+        background-color: $color_white;
+        color: $color_btnPopular-bg;
+        border: 2px solid $color_btnPopular-bg;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .description__text {
+    text-align: center;
+    .name__house {
+      width: 190px;
+      margin: 0 auto 10px;
+    }
+    .price__now {
+      color: $color_pseudo-el;
+      margin: 0 auto 5px;
+    }
+    .price__house {
+      font-size: 1.5em;
+      margin: 0 auto 10px;
+    }
+    .size__house {
+      margin: 0 auto 20px;
+    }
+  }
+  .more__details-btn {
+    text-align: center;
+    margin: 0 auto 15px;
+    .btn {
+      @include btn;
+      width: 240px;
+      height: 50px;
+      &:hover {
+        @include btn_hover;
+      }
+    }
+  }
+}

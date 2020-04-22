@@ -17,6 +17,11 @@ body {
   font-family: "Ubuntu normal";
   font-size: 16px;
 }
+header,
+main,
+footer {
+  z-index: 1;
+}
 .conteiner {
   max-width: $widthContent;
   margin: 0;
@@ -73,4 +78,36 @@ h2 {
 }
 .bg_color {
   background-color: $color_container_bg;
+}
+#breadcumbs {
+  background-color: $color_container_bg;
+  padding: 10px 0 10px 20px;
+  ul {
+    @include dspFlex;
+    font-weight: bold;
+    li {
+      &::after {
+        content: ">";
+        margin: 0 5px;
+      }
+      a {
+        color: $color_link-active;
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+      &:last-child {
+        &::after {
+          content: none;
+        }
+        a {
+          color: $color_black;
+          &:hover {
+            opacity: 1;
+            cursor: inherit;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,38 @@
+#questions {
+  padding: 0 0 1px;
+  h1 {
+    max-width: 345px;
+    margin: 0 auto;
+    &::after {
+      right: 0;
+    }
+    &::before {
+      left: 0;
+    }
+  }
+}
+.question,
+.answer {
+  border: 2px solid rgba(34, 32, 30, 0.18);
+  padding: 15px 15px 10px;
+  border-radius: 5px;
+  background-color: $color_white;
+  width: 100%;
+  margin: 20px 0;
+  @include transition;
+  &:hover {
+    @include boxShadow;
+  }
+  h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    font-weight: normal;
+  }
+  p {
+    line-height: 24px;
+  }
+}
+.answer {
+  width: 90%;
+  margin-left: auto;
+}

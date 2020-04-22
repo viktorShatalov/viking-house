@@ -71,6 +71,41 @@
     transform: rotate(-45deg);
     bottom: 8px;
   }
+  .navbar {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+    left: -100%;
+    @include transition;
+    ul {
+      @include dspFlex;
+      flex-direction: column;
+      margin: 100px 0 0;
+      justify-content: center;
+      align-items: center;
+      li {
+        a {
+          padding: 12px 0;
+        }
+      }
+    }
+  }
+  .navbar.active {
+    left: 0;
+  }
+  // modal
+  .modal__header {
+    h3 {
+      font-size: 1.5em;
+    }
+  }
+  .close-button {
+    top: 12px;
+    right: 10px;
+  }
   // main
   .tab-header {
     flex-wrap: wrap;
@@ -118,7 +153,7 @@
     }
   }
   .footer__menu ul {
-    margin: 0 10px;
+    margin: 20px 10px 0;
   }
   .social {
     margin-top: 20px;

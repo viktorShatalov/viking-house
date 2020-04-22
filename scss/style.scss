@@ -6,9 +6,6 @@
 /* общие настройки */
 @import "_settings";
 
-// modal
-@import "_modal";
-
 // header
 @import "_header";
 
@@ -17,6 +14,15 @@
 
 // footer
 @import "_footer.scss";
+
+// modal
+@import "_modal";
+
+// question page
+@import "_question";
+
+// project-cena page
+@import "_question";
 
 // media-query
 @import "_media.scss";

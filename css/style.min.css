@@ -1614,45 +1614,67 @@ input[type="submit"]:hover {
   max-height: 450px;
 }
 
-.cardProduct__content .options .left__options .slider-nav {
+.cardProduct__content .options .left__options .slider-nav,
+.cardProduct__content .options .left__options .slider-for_modal,
+.cardProduct__content .options .left__options .slider-nav_modal {
   width: 350px;
   margin: 0 auto;
 }
 
 .cardProduct__content .options .left__options .slider-nav .slick-prev:before,
-.cardProduct__content .options .left__options .slider-nav .slick-next:before {
+.cardProduct__content .options .left__options .slider-nav .slick-next:before,
+.cardProduct__content .options .left__options .slider-for_modal .slick-prev:before,
+.cardProduct__content .options .left__options .slider-for_modal .slick-next:before,
+.cardProduct__content .options .left__options .slider-nav_modal .slick-prev:before,
+.cardProduct__content .options .left__options .slider-nav_modal .slick-next:before {
   padding: 4px 13px;
   font-size: 32px;
 }
 
 .cardProduct__content .options .left__options .slider-nav .slick-prev,
-.cardProduct__content .options .left__options .slider-nav .slick-next {
+.cardProduct__content .options .left__options .slider-nav .slick-next,
+.cardProduct__content .options .left__options .slider-for_modal .slick-prev,
+.cardProduct__content .options .left__options .slider-for_modal .slick-next,
+.cardProduct__content .options .left__options .slider-nav_modal .slick-prev,
+.cardProduct__content .options .left__options .slider-nav_modal .slick-next {
   top: 45%;
 }
 
-.cardProduct__content .options .left__options .slider-nav .slick-next {
+.cardProduct__content .options .left__options .slider-nav .slick-next,
+.cardProduct__content .options .left__options .slider-for_modal .slick-next,
+.cardProduct__content .options .left__options .slider-nav_modal .slick-next {
   right: -25px;
 }
 
-.cardProduct__content .options .left__options .slider-nav .slick-prev {
+.cardProduct__content .options .left__options .slider-nav .slick-prev,
+.cardProduct__content .options .left__options .slider-for_modal .slick-prev,
+.cardProduct__content .options .left__options .slider-nav_modal .slick-prev {
   left: -50px;
 }
 
-.cardProduct__content .options .left__options .slider-nav .slick-current {
+.cardProduct__content .options .left__options .slider-nav .slick-current,
+.cardProduct__content .options .left__options .slider-for_modal .slick-current,
+.cardProduct__content .options .left__options .slider-nav_modal .slick-current {
   border: 5px solid #39b54a;
   border-radius: 5px;
 }
 
-.cardProduct__content .options .left__options .slider-nav .slick-current.slider__img {
+.cardProduct__content .options .left__options .slider-nav .slick-current.slider__img,
+.cardProduct__content .options .left__options .slider-for_modal .slick-current.slider__img,
+.cardProduct__content .options .left__options .slider-nav_modal .slick-current.slider__img {
   padding: 0;
 }
 
-.cardProduct__content .options .left__options .slider-nav .slider__img {
+.cardProduct__content .options .left__options .slider-nav .slider__img,
+.cardProduct__content .options .left__options .slider-for_modal .slider__img,
+.cardProduct__content .options .left__options .slider-nav_modal .slider__img {
   width: 110px !important;
   margin: 3.5px;
 }
 
-.cardProduct__content .options .left__options .slider-nav .slider__img img {
+.cardProduct__content .options .left__options .slider-nav .slider__img img,
+.cardProduct__content .options .left__options .slider-for_modal .slider__img img,
+.cardProduct__content .options .left__options .slider-nav_modal .slider__img img {
   width: 100px;
   height: 80px;
 }
@@ -2079,6 +2101,11 @@ input[type="submit"]:hover {
   color: #608f93;
 }
 
+.uk-modal-dialog {
+  width: 90%;
+  height: 90%;
+}
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   body {
@@ -2091,7 +2118,8 @@ input[type="submit"]:hover {
   .navbar,
   .header .work_schedule,
   .aboutUs__content .left,
-  .reviews__slider .slider__item .item__img {
+  .reviews__slider .slider__item .item__img,
+  .magnifier_btn {
     display: none;
   }
   .header {

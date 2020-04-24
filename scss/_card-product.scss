@@ -47,7 +47,9 @@
           max-height: 450px;
         }
       }
-      .slider-nav {
+      .slider-nav,
+      .slider-for_modal,
+      .slider-nav_modal {
         .slick-prev:before,
         .slick-next:before {
           padding: 4px 13px;
@@ -407,4 +409,12 @@
       }
     }
   }
+}
+#slider__modal {
+  .slider-for_modal {
+  }
+}
+.uk-modal-dialog {
+  width: 90%;
+  height: 90%;
 }

@@ -1,9 +1,7 @@
 #cardProduct {
   .head {
     h1 {
-      width: 100%;
       text-align: left;
-      padding-left: 10px;
       &::after,
       &::before {
         content: none;
@@ -251,6 +249,16 @@
   .right {
     flex: 0 1 50%;
     margin: 0 5px;
+    .uk-grid-small {
+      @include dspFlex;
+      flex-wrap: wrap;
+    }
+    .uk-width-expand {
+      width: 1px;
+      flex: 1;
+      min-width: 0;
+      flex-basis: 1px;
+    }
   }
 }
 .btn_after {
@@ -285,6 +293,36 @@
     .left_content,
     .right__content {
       margin: 0 10px;
+      & .advantages__items {
+        .item {
+          width: 100%;
+          max-width: 280px;
+          flex-direction: row;
+          align-items: center;
+          margin: 11.5px 0;
+          .item__img {
+            background-color: $color_circle-advantage;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            @include dspFlex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            img {
+              width: 20px;
+            }
+          }
+          .item__description {
+            width: 70%;
+            text-align: left;
+            font-weight: normal;
+            font-size: 0.9em;
+            margin: auto;
+            margin-left: 20px;
+          }
+        }
+      }
     }
     .head {
       h5 {
@@ -294,36 +332,6 @@
         margin: 30px auto;
         font-weight: bold;
         color: $color_black;
-      }
-    }
-  }
-  .advantages__items {
-    .item {
-      width: 100%;
-      max-width: 280px;
-      flex-direction: row;
-      align-items: center;
-      margin: 11.5px 0;
-      .item__img {
-        background-color: $color_circle-advantage;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        @include dspFlex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        img {
-          width: 20px;
-        }
-      }
-      .item__description {
-        width: 70%;
-        text-align: left;
-        font-weight: normal;
-        font-size: 0.9em;
-        margin: auto;
-        margin-left: 20px;
       }
     }
   }

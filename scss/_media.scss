@@ -167,7 +167,7 @@
   //  category-page
 
   #filtr .sizes ul li a {
-    margin: 10px 3px 10px !important;
+    margin: 10px 1px 10px !important;
   }
   #filtr .sizes ul li:first-child a {
     margin: 10px 18px 10px -5px !important;
@@ -220,6 +220,14 @@
     }
     .video {
       width: 320px;
+    }
+  }
+  .description__additions {
+    flex-wrap: wrap;
+    .left,
+    .right {
+      flex: 0 1 100%;
+      margin: 0;
     }
   }
   // footer

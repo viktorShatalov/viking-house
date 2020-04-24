@@ -1,5 +1,23 @@
 jQuery(document).ready(function () {
 
+    // Preloader 
+
+    function preloader() {
+        var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+        var preloader = jQuery('#preloader');
+        if (!isMobile) {
+            setTimeout(function () {
+                preloader.addClass('preloaded');
+            }, 350);
+            setTimeout(function () {
+                preloader.remove();
+            }, 1500);
+        } else {
+            preloader.remove();
+        }
+    }
+    preloader()
+
     //  mobile-menu
 
     jQuery('.burger').click(function () {
@@ -11,7 +29,7 @@ jQuery(document).ready(function () {
 
     jQuery('.js-tab-trigger').click(function () {
         var id = jQuery(this).attr('data-tab'),
-            content = $('.js-tab-content[data-tab="' + id + '"]');
+            content = jQuery('.js-tab-content[data-tab="' + id + '"]');
 
         jQuery('.js-tab-trigger.active').removeClass('active');
         jQuery(this).addClass('active');
@@ -19,19 +37,6 @@ jQuery(document).ready(function () {
         jQuery('.js-tab-content.active').removeClass('active');
         content.addClass('active');
     });
-
-    // tabs btn in slider-item
-
-    // jQuery('.js-tab-trigger__btn').click(function () {
-    //     var id = jQuery(this).attr('data-tab'),
-    //         content = $('.js-tab-content__btn[data-tab="' + id + '"]');
-
-    //     jQuery('.js-tab-trigger__btn.active').removeClass('active');
-    //     jQuery(this).addClass('active');
-
-    //     jQuery('.js-tab-content__btn.active').removeClass('active');
-    //     content.addClass('active');
-    // });
 
     // sliders
 

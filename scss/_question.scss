@@ -1,15 +1,5 @@
 #questions {
   padding: 0 0 1px;
-  h1 {
-    max-width: 345px;
-    margin: 0 auto;
-    &::after {
-      right: 0;
-    }
-    &::before {
-      left: 0;
-    }
-  }
 }
 .question,
 .answer {

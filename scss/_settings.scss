@@ -57,6 +57,9 @@ h2 {
 h1,
 h2 {
   position: relative;
+  display: inline-block;
+  transform: translateX(-50%);
+  left: 50%;
   &::before,
   &::after {
     content: "";
@@ -67,10 +70,12 @@ h2 {
     top: 50%;
   }
   &::after {
-    right: 17%;
+    right: 100%;
+    margin-right: 20px;
   }
   &::before {
-    left: 17%;
+    left: 100%;
+    margin-left: 20px;
   }
 }
 .m-auto {
@@ -93,18 +98,6 @@ p,
 pre,
 ul {
   margin: 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  font-family: inherit;
-  font-weight: inherit;
-  color: inherit;
-  text-transform: inherit;
 }
 #breadcumbs {
   background-color: $color_container_bg;

@@ -38,17 +38,6 @@
 
 // section popular _______________________________________________________________________________________________
 
-#popular {
-  h2 {
-    max-width: 490px;
-    &::after {
-      right: 0;
-    }
-    &::before {
-      left: 0;
-    }
-  }
-}
 .tab-header {
   @include dspFlex;
   align-items: center;
@@ -194,15 +183,6 @@
 }
 // ready__project______________________________________________________________________________________________________
 #ready__project {
-  h2 {
-    max-width: 490px;
-    &::after {
-      right: -5px;
-    }
-    &::before {
-      left: -5px;
-    }
-  }
   padding: 0 0 20px;
 }
 .ready__project-slider {
@@ -238,17 +218,7 @@
 }
 
 // map
-#map {
-  h2 {
-    max-width: 670px;
-    &::after {
-      right: 0;
-    }
-    &::before {
-      left: 0;
-    }
-  }
-}
+
 .map {
   min-width: 58%;
   overflow: hidden;
@@ -288,34 +258,26 @@
 // reviews
 #reviews {
   padding: 0 0 135px;
-  h2 {
-    max-width: 220px;
-    &::after {
-      right: 0;
-    }
-    &::before {
-      left: 0;
-    }
-  }
-  .content {
-    position: relative;
-    .btn-all__reviews {
-      position: absolute;
-      bottom: -25px;
-      right: 0;
-      a {
-        text-decoration: underline;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 1.25em;
-        @include transition;
-        &:hover {
-          opacity: 0.85;
-        }
+}
+.content {
+  position: relative;
+  .btn-all__reviews {
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    a {
+      text-decoration: underline;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.25em;
+      @include transition;
+      &:hover {
+        opacity: 0.85;
       }
     }
   }
 }
+
 .reviews__slider,
 .slider-nav {
   .slick-prev:before,

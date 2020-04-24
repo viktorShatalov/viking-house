@@ -31,7 +31,7 @@
           &:hover {
             background-color: $color_filtr-item-hover;
           }
-          &.active {
+          &[aria-current="page"] {
             background-color: $color_filtr-item-hover;
           }
         }
@@ -47,7 +47,7 @@
           }
         }
         a {
-          width: 170px;
+          width: 160px;
         }
       }
     }

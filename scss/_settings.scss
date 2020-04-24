@@ -139,6 +139,7 @@ h6 {
   }
 }
 #pagination {
+  padding: 30px 0 50px;
   ul {
     @include dspFlex;
     justify-content: center;

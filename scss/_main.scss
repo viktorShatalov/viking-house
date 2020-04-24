@@ -102,18 +102,10 @@
         }
       }
       .description__option {
-        @include dspFlex;
-        justify-content: space-around;
-        margin: 20px 0;
-        .btn.active {
-          @include btn;
-          width: 115px;
-          height: 40px;
-          background-color: $color_btnPopular-bg;
-          color: $color_white;
-          border-radius: 5px;
-          text-transform: inherit;
-          border: 2px solid $color_btnPopular-bg;
+        ul {
+          @include dspFlex;
+          justify-content: space-around;
+          margin: 20px 0;
         }
         .btn {
           @include btn;
@@ -128,9 +120,11 @@
             transform: scale(1.1);
           }
         }
-        .full__construction {
-        }
-        .without__finishing {
+        .uk-active {
+          button {
+            background-color: $color_btnPopular-bg;
+            color: $color_white;
+          }
         }
       }
     }
@@ -159,6 +153,9 @@
         @include btn;
         width: 240px;
         height: 50px;
+        padding: 13px 0 0;
+        display: block;
+        margin: 0 auto;
         &:hover {
           @include btn_hover;
         }
@@ -262,11 +259,10 @@
     left: 0;
     top: 0;
     width: 1200px;
-    height: 450px;
+    height: 350px;
     position: absolute;
   }
 }
-
 //  about us
 
 .aboutUs__content {
@@ -320,7 +316,8 @@
     }
   }
 }
-.reviews__slider {
+.reviews__slider,
+.slider-nav {
   .slick-prev:before,
   .slick-next:before {
     color: $color_white;

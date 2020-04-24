@@ -1,0 +1,248 @@
+#cardProduct {
+  .head {
+    h1 {
+      width: 100%;
+      text-align: left;
+      padding-left: 10px;
+      &::after,
+      &::before {
+        content: none;
+      }
+    }
+  }
+}
+.cardProduct__content {
+  .options {
+    @include dspFlex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    .left__options,
+    .rigth__options {
+      flex: 0 1 50%;
+    }
+    .left__options {
+      .slider__img {
+        padding: 5px;
+        background-color: $color_white;
+      }
+      .slider-for {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 580px;
+        img {
+          width: 100%;
+          max-width: 580px;
+          max-height: 450px;
+        }
+      }
+      .slider-nav {
+        .slick-prev:before,
+        .slick-next:before {
+          padding: 4px 13px;
+          font-size: 32px;
+        }
+        .slick-prev,
+        .slick-next {
+          top: 45%;
+        }
+        .slick-next {
+          right: -25px;
+        }
+        .slick-prev {
+          left: -50px;
+        }
+        width: 350px;
+        margin: 0 auto;
+        .slick-current {
+          border: 5px solid $color_circle-advantage;
+          border-radius: 5px;
+          &.slider__img {
+            padding: 0;
+          }
+        }
+        .slider__img {
+          width: 110px !important;
+          margin: 3.5px;
+          img {
+            width: 100px;
+            height: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.characteristics,
+.price__options {
+  background-color: $color_white;
+  padding: 20px 30px;
+  margin: 0 0 20px;
+  font-weight: bold;
+  h4 {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  ul {
+    li {
+      display: block;
+      @include dspFlex;
+      padding: 0 0 15px;
+      .description__name {
+        display: inline-block;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 107%;
+          right: -9999px;
+          bottom: 0;
+          top: 0;
+          border-bottom: 1px solid $color_btn-bg;
+          opacity: 0.35;
+        }
+      }
+      .description__left {
+        overflow: hidden;
+        width: 86%;
+      }
+      .description__quantity {
+        color: $color_text-p;
+        margin: 0 5px;
+      }
+    }
+  }
+}
+.price__options {
+  .description__quantity {
+    strong {
+      color: $color_circle-advantage;
+    }
+  }
+  .btn_switcher,
+  .btn_conteiner {
+    @include dspFlex;
+    justify-content: space-between;
+  }
+  .btn {
+    @include btn;
+    width: 115px;
+    height: 40px;
+    border-radius: 5px;
+    text-transform: inherit;
+    background-color: $color_white;
+    color: $color_btnPopular-bg;
+    border: 2px solid $color_btnPopular-bg;
+    margin-right: 10px;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .uk-active {
+    .btn {
+      background-color: $color_btnPopular-bg;
+      color: $color_white;
+    }
+  }
+}
+.order__btn {
+  .btn {
+    @include btn;
+    width: 240px;
+    height: 50px;
+    background-color: $color_btnPopular-bg;
+    color: $color_white;
+    border: 2px solid $color_btnPopular-bg;
+    border-radius: 0;
+    &:hover {
+      transform: scale(1);
+    }
+  }
+}
+.specifications__btn_item {
+  @include dspFlex;
+  border-bottom: 4px solid $color_circle-advantage;
+  .item {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0 5px;
+    color: $color_circle-advantage;
+    background-color: $color_white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 2px solid $color_circle-advantage;
+    border-bottom: none;
+    @include transition;
+  }
+  .uk-active {
+    &.item {
+      color: $color_white;
+      background-color: $color_circle-advantage;
+    }
+  }
+}
+.specifications {
+  h4 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+  .specifications__description {
+    .content {
+      li {
+        font-weight: bold;
+        padding: 10px 0;
+        &:nth-child(2n) {
+          background-color: $color_white;
+        }
+      }
+    }
+  }
+  .map {
+    margin: 20px auto 0;
+  }
+}
+.specifications__description {
+  .content {
+    ul {
+      li {
+        @include dspFlex;
+        flex-wrap: wrap;
+        .description__name {
+          display: inline-block;
+          position: relative;
+        }
+        .description__left {
+          overflow: hidden;
+          width: 30%;
+        }
+        .description__quantity {
+          color: $color_text-p;
+          font-weight: normal;
+          width: 70%;
+          strong {
+            color: $color_link-active;
+          }
+        }
+      }
+    }
+  }
+}
+.description__additions {
+  @include dspFlex;
+  .left,
+  .right {
+    flex: 0 1 50%;
+    margin: 0 5px;
+  }
+}
+.btn_after {
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+//  caed-product advantages
+

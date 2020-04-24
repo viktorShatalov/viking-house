@@ -8,8 +8,10 @@
   <link rel="shortcut icon" href="" type="image/x-icon">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/uikit.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/jquery/jquery.min.js"></script>
+  <script src="js/uikit.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 </head>
@@ -203,74 +205,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn js-tab-trigger__btn active" data-tab="1">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn js-tab-trigger__btn" data-tab="2">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav1'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="js-tab-content__btn active" data-tab="1">
-                      <div class="description__text ">
-                        <h4 class="name__house">
-                          Каркасный одноэтажный дом 6х6м
-                        </h4>
-                        <p class="price__now">
-                          <small>
-                            <strong>
-                              Цена сегодня
-                            </strong>
-                          </small>
-                        </p>
-                        <p class="price__house">
-                          <strong>
-                            492 000 руб.
-                          </strong>
-                        </p>
-                        <p class="size__house">
-                          <small>
-                            <strong>
-                              Размер дома 6x6
-                            </strong>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="js-tab-content__btn" data-tab="2">
-                      <div class="description__text ">
-                        <h4 class="name__house">
-                          Каркасный одноэтажный дом 6х6м
-                        </h4>
-                        <p class="price__now">
-                          <small>
-                            <strong>
-                              Цена сегодня
-                            </strong>
-                          </small>
-                        </p>
-                        <p class="price__house">
-                          <strong>
-                            1 000 000 руб.
-                          </strong>
-                        </p>
-                        <p class="size__house">
-                          <small>
-                            <strong>
-                              Размер дома 6x6
-                            </strong>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav1" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -279,74 +295,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn js-tab-trigger__btn active" data-tab="3">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn js-tab-trigger__btn" data-tab="4">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav2'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="js-tab-content__btn active" data-tab="3">
-                      <div class="description__text ">
-                        <h4 class="name__house">
-                          Каркасный одноэтажный дом 6х6м
-                        </h4>
-                        <p class="price__now">
-                          <small>
-                            <strong>
-                              Цена сегодня
-                            </strong>
-                          </small>
-                        </p>
-                        <p class="price__house">
-                          <strong>
-                            492 000 руб.
-                          </strong>
-                        </p>
-                        <p class="size__house">
-                          <small>
-                            <strong>
-                              Размер дома 6x6
-                            </strong>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="js-tab-content__btn" data-tab="4">
-                      <div class="description__text ">
-                        <h4 class="name__house">
-                          Каркасный одноэтажный дом 6х6м
-                        </h4>
-                        <p class="price__now">
-                          <small>
-                            <strong>
-                              Цена сегодня
-                            </strong>
-                          </small>
-                        </p>
-                        <p class="price__house">
-                          <strong>
-                            1 000 000 руб.
-                          </strong>
-                        </p>
-                        <p class="size__house">
-                          <small>
-                            <strong>
-                              Размер дома 6x6
-                            </strong>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav2" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -355,74 +385,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn js-tab-trigger__btn " data-tab="5">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn js-tab-trigger__btn" data-tab="6">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav3'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="js-tab-content__btn " data-tab="5">
-                      <div class="description__text ">
-                        <h4 class="name__house">
-                          Каркасный одноэтажный дом 6х6м
-                        </h4>
-                        <p class="price__now">
-                          <small>
-                            <strong>
-                              Цена сегодня
-                            </strong>
-                          </small>
-                        </p>
-                        <p class="price__house">
-                          <strong>
-                            492 000 руб.
-                          </strong>
-                        </p>
-                        <p class="size__house">
-                          <small>
-                            <strong>
-                              Размер дома 6x6
-                            </strong>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="js-tab-content__btn" data-tab="6">
-                      <div class="description__text ">
-                        <h4 class="name__house">
-                          Каркасный одноэтажный дом 6х6м
-                        </h4>
-                        <p class="price__now">
-                          <small>
-                            <strong>
-                              Цена сегодня
-                            </strong>
-                          </small>
-                        </p>
-                        <p class="price__house">
-                          <strong>
-                            1 000 000 руб.
-                          </strong>
-                        </p>
-                        <p class="size__house">
-                          <small>
-                            <strong>
-                              Размер дома 6x6
-                            </strong>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav3" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -431,74 +475,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn js-tab-trigger__btn " data-tab="7">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn js-tab-trigger__btn" data-tab="8">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav4'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="js-tab-content__btn " data-tab="7">
-                      <div class="description__text ">
-                        <h4 class="name__house">
-                          Каркасный одноэтажный дом 6х6м
-                        </h4>
-                        <p class="price__now">
-                          <small>
-                            <strong>
-                              Цена сегодня
-                            </strong>
-                          </small>
-                        </p>
-                        <p class="price__house">
-                          <strong>
-                            492 000 руб.
-                          </strong>
-                        </p>
-                        <p class="size__house">
-                          <small>
-                            <strong>
-                              Размер дома 6x6
-                            </strong>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="js-tab-content__btn" data-tab="8">
-                      <div class="description__text ">
-                        <h4 class="name__house">
-                          Каркасный одноэтажный дом 6х6м
-                        </h4>
-                        <p class="price__now">
-                          <small>
-                            <strong>
-                              Цена сегодня
-                            </strong>
-                          </small>
-                        </p>
-                        <p class="price__house">
-                          <strong>
-                            1 000 000 руб.
-                          </strong>
-                        </p>
-                        <p class="size__house">
-                          <small>
-                            <strong>
-                              Размер дома 6x6
-                            </strong>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav4" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -507,74 +565,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn js-tab-trigger__btn" data-tab="9">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn js-tab-trigger__btn" data-tab="10">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav5'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="js-tab-content__btn " data-tab="9">
-                      <div class="description__text ">
-                        <h4 class="name__house">
-                          Каркасный одноэтажный дом 6х6м
-                        </h4>
-                        <p class="price__now">
-                          <small>
-                            <strong>
-                              Цена сегодня
-                            </strong>
-                          </small>
-                        </p>
-                        <p class="price__house">
-                          <strong>
-                            492 000 руб.
-                          </strong>
-                        </p>
-                        <p class="size__house">
-                          <small>
-                            <strong>
-                              Размер дома 6x6
-                            </strong>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="js-tab-content__btn" data-tab="10">
-                      <div class="description__text ">
-                        <h4 class="name__house">
-                          Каркасный одноэтажный дом 6х6м
-                        </h4>
-                        <p class="price__now">
-                          <small>
-                            <strong>
-                              Цена сегодня
-                            </strong>
-                          </small>
-                        </p>
-                        <p class="price__house">
-                          <strong>
-                            1 000 000 руб.
-                          </strong>
-                        </p>
-                        <p class="size__house">
-                          <small>
-                            <strong>
-                              Размер дома 6x6
-                            </strong>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav5" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -583,74 +655,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn js-tab-trigger__btn " data-tab="11">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn js-tab-trigger__btn" data-tab="12">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav6'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="js-tab-content__btn " data-tab="11">
-                      <div class="description__text ">
-                        <h4 class="name__house">
-                          Каркасный одноэтажный дом 6х6м
-                        </h4>
-                        <p class="price__now">
-                          <small>
-                            <strong>
-                              Цена сегодня
-                            </strong>
-                          </small>
-                        </p>
-                        <p class="price__house">
-                          <strong>
-                            492 000 руб.
-                          </strong>
-                        </p>
-                        <p class="size__house">
-                          <small>
-                            <strong>
-                              Размер дома 6x6
-                            </strong>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="js-tab-content__btn" data-tab="12">
-                      <div class="description__text ">
-                        <h4 class="name__house">
-                          Каркасный одноэтажный дом 6х6м
-                        </h4>
-                        <p class="price__now">
-                          <small>
-                            <strong>
-                              Цена сегодня
-                            </strong>
-                          </small>
-                        </p>
-                        <p class="price__house">
-                          <strong>
-                            1 000 000 руб.
-                          </strong>
-                        </p>
-                        <p class="size__house">
-                          <small>
-                            <strong>
-                              Размер дома 6x6
-                            </strong>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav6" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -659,74 +745,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn js-tab-trigger__btn" data-tab="13">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn js-tab-trigger__btn" data-tab="14">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav7'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="js-tab-content__btn " data-tab="13">
-                      <div class="description__text ">
-                        <h4 class="name__house">
-                          Каркасный одноэтажный дом 6х6м
-                        </h4>
-                        <p class="price__now">
-                          <small>
-                            <strong>
-                              Цена сегодня
-                            </strong>
-                          </small>
-                        </p>
-                        <p class="price__house">
-                          <strong>
-                            492 000 руб.
-                          </strong>
-                        </p>
-                        <p class="size__house">
-                          <small>
-                            <strong>
-                              Размер дома 6x6
-                            </strong>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="js-tab-content__btn" data-tab="14">
-                      <div class="description__text ">
-                        <h4 class="name__house">
-                          Каркасный одноэтажный дом 6х6м
-                        </h4>
-                        <p class="price__now">
-                          <small>
-                            <strong>
-                              Цена сегодня
-                            </strong>
-                          </small>
-                        </p>
-                        <p class="price__house">
-                          <strong>
-                            1 000 000 руб.
-                          </strong>
-                        </p>
-                        <p class="size__house">
-                          <small>
-                            <strong>
-                              Размер дома 6x6
-                            </strong>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav7" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -735,74 +835,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn js-tab-trigger__btn " data-tab="15">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn js-tab-trigger__btn" data-tab="16">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav8'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="js-tab-content__btn" data-tab="15">
-                      <div class="description__text ">
-                        <h4 class="name__house">
-                          Каркасный одноэтажный дом 6х6м
-                        </h4>
-                        <p class="price__now">
-                          <small>
-                            <strong>
-                              Цена сегодня
-                            </strong>
-                          </small>
-                        </p>
-                        <p class="price__house">
-                          <strong>
-                            492 000 руб.
-                          </strong>
-                        </p>
-                        <p class="size__house">
-                          <small>
-                            <strong>
-                              Размер дома 6x6
-                            </strong>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="js-tab-content__btn" data-tab="16">
-                      <div class="description__text ">
-                        <h4 class="name__house">
-                          Каркасный одноэтажный дом 6х6м
-                        </h4>
-                        <p class="price__now">
-                          <small>
-                            <strong>
-                              Цена сегодня
-                            </strong>
-                          </small>
-                        </p>
-                        <p class="price__house">
-                          <strong>
-                            1 000 000 руб.
-                          </strong>
-                        </p>
-                        <p class="size__house">
-                          <small>
-                            <strong>
-                              Размер дома 6x6
-                            </strong>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav8" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -811,74 +925,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn js-tab-trigger__btn" data-tab="17">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn js-tab-trigger__btn" data-tab="18">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav9'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="js-tab-content__btn " data-tab="17">
-                      <div class="description__text ">
-                        <h4 class="name__house">
-                          Каркасный одноэтажный дом 6х6м
-                        </h4>
-                        <p class="price__now">
-                          <small>
-                            <strong>
-                              Цена сегодня
-                            </strong>
-                          </small>
-                        </p>
-                        <p class="price__house">
-                          <strong>
-                            492 000 руб.
-                          </strong>
-                        </p>
-                        <p class="size__house">
-                          <small>
-                            <strong>
-                              Размер дома 6x6
-                            </strong>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="js-tab-content__btn" data-tab="18">
-                      <div class="description__text ">
-                        <h4 class="name__house">
-                          Каркасный одноэтажный дом 6х6м
-                        </h4>
-                        <p class="price__now">
-                          <small>
-                            <strong>
-                              Цена сегодня
-                            </strong>
-                          </small>
-                        </p>
-                        <p class="price__house">
-                          <strong>
-                            1 000 000 руб.
-                          </strong>
-                        </p>
-                        <p class="size__house">
-                          <small>
-                            <strong>
-                              Размер дома 6x6
-                            </strong>
-                          </small>
-                        </p>
-                      </div>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav9" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -891,48 +1019,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav21'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="description__text">
-                      <p class="name__house">
-                        <strong>
-                          Каркасный одноэтажный дом 6х6м
-                        </strong>
-                      </p>
-                      <p class="price__now">
-                        <small>
-                          <strong>
-                            Цена сегодня
-                          </strong>
-                        </small>
-                      </p>
-                      <p class="price__house">
-                        <strong>
-                          492 000 руб.
-                        </strong>
-                      </p>
-                      <p class="size__house">
-                        <small>
-                          <strong>
-                            Размер дома 6x6
-                          </strong>
-                        </small>
-                      </p>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav21" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -941,48 +1109,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav22'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="description__text">
-                      <p class="name__house">
-                        <strong>
-                          Каркасный одноэтажный дом 6х6м
-                        </strong>
-                      </p>
-                      <p class="price__now">
-                        <small>
-                          <strong>
-                            Цена сегодня
-                          </strong>
-                        </small>
-                      </p>
-                      <p class="price__house">
-                        <strong>
-                          492 000 руб.
-                        </strong>
-                      </p>
-                      <p class="size__house">
-                        <small>
-                          <strong>
-                            Размер дома 6x6
-                          </strong>
-                        </small>
-                      </p>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav22" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -991,48 +1199,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav23'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="description__text">
-                      <p class="name__house">
-                        <strong>
-                          Каркасный одноэтажный дом 6х6м
-                        </strong>
-                      </p>
-                      <p class="price__now">
-                        <small>
-                          <strong>
-                            Цена сегодня
-                          </strong>
-                        </small>
-                      </p>
-                      <p class="price__house">
-                        <strong>
-                          492 000 руб.
-                        </strong>
-                      </p>
-                      <p class="size__house">
-                        <small>
-                          <strong>
-                            Размер дома 6x6
-                          </strong>
-                        </small>
-                      </p>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav23" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -1041,48 +1289,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav24'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="description__text">
-                      <p class="name__house">
-                        <strong>
-                          Каркасный одноэтажный дом 6х6м
-                        </strong>
-                      </p>
-                      <p class="price__now">
-                        <small>
-                          <strong>
-                            Цена сегодня
-                          </strong>
-                        </small>
-                      </p>
-                      <p class="price__house">
-                        <strong>
-                          492 000 руб.
-                        </strong>
-                      </p>
-                      <p class="size__house">
-                        <small>
-                          <strong>
-                            Размер дома 6x6
-                          </strong>
-                        </small>
-                      </p>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav24" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -1091,48 +1379,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav25'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="description__text">
-                      <p class="name__house">
-                        <strong>
-                          Каркасный одноэтажный дом 6х6м
-                        </strong>
-                      </p>
-                      <p class="price__now">
-                        <small>
-                          <strong>
-                            Цена сегодня
-                          </strong>
-                        </small>
-                      </p>
-                      <p class="price__house">
-                        <strong>
-                          492 000 руб.
-                        </strong>
-                      </p>
-                      <p class="size__house">
-                        <small>
-                          <strong>
-                            Размер дома 6x6
-                          </strong>
-                        </small>
-                      </p>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav25" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -1141,48 +1469,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav26'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="description__text">
-                      <p class="name__house">
-                        <strong>
-                          Каркасный одноэтажный дом 6х6м
-                        </strong>
-                      </p>
-                      <p class="price__now">
-                        <small>
-                          <strong>
-                            Цена сегодня
-                          </strong>
-                        </small>
-                      </p>
-                      <p class="price__house">
-                        <strong>
-                          492 000 руб.
-                        </strong>
-                      </p>
-                      <p class="size__house">
-                        <small>
-                          <strong>
-                            Размер дома 6x6
-                          </strong>
-                        </small>
-                      </p>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav26" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -1191,48 +1559,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav27'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="description__text">
-                      <p class="name__house">
-                        <strong>
-                          Каркасный одноэтажный дом 6х6м
-                        </strong>
-                      </p>
-                      <p class="price__now">
-                        <small>
-                          <strong>
-                            Цена сегодня
-                          </strong>
-                        </small>
-                      </p>
-                      <p class="price__house">
-                        <strong>
-                          492 000 руб.
-                        </strong>
-                      </p>
-                      <p class="size__house">
-                        <small>
-                          <strong>
-                            Размер дома 6x6
-                          </strong>
-                        </small>
-                      </p>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav27" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -1241,48 +1649,178 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav28'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="description__text">
-                      <p class="name__house">
-                        <strong>
-                          Каркасный одноэтажный дом 6х6м
-                        </strong>
-                      </p>
-                      <p class="price__now">
-                        <small>
-                          <strong>
-                            Цена сегодня
-                          </strong>
-                        </small>
-                      </p>
-                      <p class="price__house">
-                        <strong>
-                          492 000 руб.
-                        </strong>
-                      </p>
-                      <p class="size__house">
-                        <small>
-                          <strong>
-                            Размер дома 6x6
-                          </strong>
-                        </small>
-                      </p>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav28" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="item__img">
+                    <img src="img/sliders/popular.jpg" alt="Дома из бруса">
+                  </div>
+                  <div class="item__description">
+                    <div class="description__option">
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav29'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav29" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="more__details-btn">
+                    <a href="#" class="btn">
+                      подробнее
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1295,48 +1833,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav31'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="description__text">
-                      <p class="name__house">
-                        <strong>
-                          Каркасный одноэтажный дом 6х6м
-                        </strong>
-                      </p>
-                      <p class="price__now">
-                        <small>
-                          <strong>
-                            Цена сегодня
-                          </strong>
-                        </small>
-                      </p>
-                      <p class="price__house">
-                        <strong>
-                          492 000 руб.
-                        </strong>
-                      </p>
-                      <p class="size__house">
-                        <small>
-                          <strong>
-                            Размер дома 6x6
-                          </strong>
-                        </small>
-                      </p>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav31" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -1345,48 +1923,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav32'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="description__text">
-                      <p class="name__house">
-                        <strong>
-                          Каркасный одноэтажный дом 6х6м
-                        </strong>
-                      </p>
-                      <p class="price__now">
-                        <small>
-                          <strong>
-                            Цена сегодня
-                          </strong>
-                        </small>
-                      </p>
-                      <p class="price__house">
-                        <strong>
-                          492 000 руб.
-                        </strong>
-                      </p>
-                      <p class="size__house">
-                        <small>
-                          <strong>
-                            Размер дома 6x6
-                          </strong>
-                        </small>
-                      </p>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav32" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -1395,48 +2013,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav33'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="description__text">
-                      <p class="name__house">
-                        <strong>
-                          Каркасный одноэтажный дом 6х6м
-                        </strong>
-                      </p>
-                      <p class="price__now">
-                        <small>
-                          <strong>
-                            Цена сегодня
-                          </strong>
-                        </small>
-                      </p>
-                      <p class="price__house">
-                        <strong>
-                          492 000 руб.
-                        </strong>
-                      </p>
-                      <p class="size__house">
-                        <small>
-                          <strong>
-                            Размер дома 6x6
-                          </strong>
-                        </small>
-                      </p>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav33" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -1445,48 +2103,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav34'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="description__text">
-                      <p class="name__house">
-                        <strong>
-                          Каркасный одноэтажный дом 6х6м
-                        </strong>
-                      </p>
-                      <p class="price__now">
-                        <small>
-                          <strong>
-                            Цена сегодня
-                          </strong>
-                        </small>
-                      </p>
-                      <p class="price__house">
-                        <strong>
-                          492 000 руб.
-                        </strong>
-                      </p>
-                      <p class="size__house">
-                        <small>
-                          <strong>
-                            Размер дома 6x6
-                          </strong>
-                        </small>
-                      </p>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav34" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -1495,48 +2193,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav35'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="description__text">
-                      <p class="name__house">
-                        <strong>
-                          Каркасный одноэтажный дом 6х6м
-                        </strong>
-                      </p>
-                      <p class="price__now">
-                        <small>
-                          <strong>
-                            Цена сегодня
-                          </strong>
-                        </small>
-                      </p>
-                      <p class="price__house">
-                        <strong>
-                          492 000 руб.
-                        </strong>
-                      </p>
-                      <p class="size__house">
-                        <small>
-                          <strong>
-                            Размер дома 6x6
-                          </strong>
-                        </small>
-                      </p>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav35" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -1545,48 +2283,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav36'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="description__text">
-                      <p class="name__house">
-                        <strong>
-                          Каркасный одноэтажный дом 6х6м
-                        </strong>
-                      </p>
-                      <p class="price__now">
-                        <small>
-                          <strong>
-                            Цена сегодня
-                          </strong>
-                        </small>
-                      </p>
-                      <p class="price__house">
-                        <strong>
-                          492 000 руб.
-                        </strong>
-                      </p>
-                      <p class="size__house">
-                        <small>
-                          <strong>
-                            Размер дома 6x6
-                          </strong>
-                        </small>
-                      </p>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav36" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -1595,48 +2373,88 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav37'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="description__text">
-                      <p class="name__house">
-                        <strong>
-                          Каркасный одноэтажный дом 6х6м
-                        </strong>
-                      </p>
-                      <p class="price__now">
-                        <small>
-                          <strong>
-                            Цена сегодня
-                          </strong>
-                        </small>
-                      </p>
-                      <p class="price__house">
-                        <strong>
-                          492 000 руб.
-                        </strong>
-                      </p>
-                      <p class="size__house">
-                        <small>
-                          <strong>
-                            Размер дома 6x6
-                          </strong>
-                        </small>
-                      </p>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav37" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div class="slider__item">
@@ -1645,48 +2463,178 @@
                   </div>
                   <div class="item__description">
                     <div class="description__option">
-                      <div class="without__finishing">
-                        <button class="btn">
-                          Без отделки
-                        </button>
-                      </div>
-                      <div class="full__construction">
-                        <button class="btn">
-                          Под ключ
-                        </button>
-                      </div>
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav38'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="description__text">
-                      <p class="name__house">
-                        <strong>
-                          Каркасный одноэтажный дом 6х6м
-                        </strong>
-                      </p>
-                      <p class="price__now">
-                        <small>
-                          <strong>
-                            Цена сегодня
-                          </strong>
-                        </small>
-                      </p>
-                      <p class="price__house">
-                        <strong>
-                          492 000 руб.
-                        </strong>
-                      </p>
-                      <p class="size__house">
-                        <small>
-                          <strong>
-                            Размер дома 6x6
-                          </strong>
-                        </small>
-                      </p>
-                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav38" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="more__details-btn">
-                    <button class="btn">
+                    <a href="#" class="btn">
                       подробнее
-                    </button>
+                    </a>
+                  </div>
+                </div>
+                <div class="slider__item">
+                  <div class="item__img">
+                    <img src="img/sliders/popular.jpg" alt="Дома из бруса">
+                  </div>
+                  <div class="item__description">
+                    <div class="description__option">
+                      <!-- This is the container of the toggling elements -->
+                      <ul data-uk-switcher="{connect:'#component-nav39'}">
+                        <li>
+                          <div class="without__finishing">
+                            <button class="btn">
+                              Без отделки
+                            </button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="full__construction">
+                            <button class="btn ">
+                              Под ключ
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- This is the container of the content items -->
+                    <ul id="component-nav39" class="uk-switcher">
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                492 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="description__text ">
+                            <h4 class="name__house">
+                              Каркасный одноэтажный дом 6х6м
+                            </h4>
+                            <p class="price__now">
+                              <small>
+                                <strong>
+                                  Цена сегодня
+                                </strong>
+                              </small>
+                            </p>
+                            <p class="price__house">
+                              <strong>
+                                1 000 000 руб.
+                              </strong>
+                            </p>
+                            <p class="size__house">
+                              <small>
+                                <strong>
+                                  Размер дома 6x6
+                                </strong>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="more__details-btn">
+                    <a href="#" class="btn">
+                      подробнее
+                    </a>
                   </div>
                 </div>
               </div>

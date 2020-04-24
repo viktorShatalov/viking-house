@@ -79,6 +79,33 @@ h2 {
 .bg_color {
   background-color: $color_container_bg;
 }
+.uk-link:hover,
+a:hover {
+  text-decoration: none;
+}
+address,
+blockquote,
+dl,
+fieldset,
+figure,
+ol,
+p,
+pre,
+ul {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-transform: inherit;
+}
 #breadcumbs {
   background-color: $color_container_bg;
   padding: 20px 0 10px 20px;

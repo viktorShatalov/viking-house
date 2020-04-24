@@ -22,23 +22,23 @@ jQuery(document).ready(function () {
 
     // tabs btn in slider-item
 
-    jQuery('.js-tab-trigger__btn').click(function () {
-        var id = jQuery(this).attr('data-tab'),
-            content = $('.js-tab-content__btn[data-tab="' + id + '"]');
+    // jQuery('.js-tab-trigger__btn').click(function () {
+    //     var id = jQuery(this).attr('data-tab'),
+    //         content = $('.js-tab-content__btn[data-tab="' + id + '"]');
 
-        jQuery('.js-tab-trigger__btn.active').removeClass('active');
-        jQuery(this).addClass('active');
+    //     jQuery('.js-tab-trigger__btn.active').removeClass('active');
+    //     jQuery(this).addClass('active');
 
-        jQuery('.js-tab-content__btn.active').removeClass('active');
-        content.addClass('active');
-    });
+    //     jQuery('.js-tab-content__btn.active').removeClass('active');
+    //     content.addClass('active');
+    // });
 
     // sliders
 
     jQuery('#tab__slider-1,#tab__slider-2,#tab__slider-3,#slider').slick({
         arrows: false,
         dots: true,
-        infinite: true,
+        infinite: false,
         lazyLoad: "progressive",
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -74,6 +74,49 @@ jQuery(document).ready(function () {
             }
         ]
     });
+    // card-product slider
+    jQuery('.slider-for').slick({
+        arrows: true,
+        dots: false,
+        infinite: true,
+        autoplay: false,
+        lazyLoad: "progressive",
+        asNavFor: '.slider-nav',
+        fade: true,
+        draggable: false,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    centerMode: true,
+                }
+            }
+        ]
+    });
+
+
+    jQuery('.slider-nav').slick({
+        arrows: true,
+        dots: false,
+        lazyLoad: "progressive",
+        asNavFor: '.slider-for',
+        slidesToShow: 3,
+        infinite: true,
+        autoplay: false,
+        focusOnSelect: true,
+        draggable: false,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 3,
+                    centerMode: true,
+                    centerPadding: '0',
+                }
+            }
+        ]
+    });
+
     // modal
     function modal() {
 

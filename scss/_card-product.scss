@@ -242,7 +242,157 @@
 .btn_after {
   margin: 40px auto 0;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 //  caed-product advantages
-
+#advantages {
+  .video {
+    width: 560px;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-width: 0;
+      outline-width: 0;
+    }
+  }
+  .content {
+    @include dspFlex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+    .left_content,
+    .right__content {
+      margin: 0 10px;
+    }
+    .head {
+      h5 {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        text-align: center;
+        margin: 30px auto;
+        font-weight: bold;
+        color: $color_black;
+      }
+    }
+  }
+  .advantages__items {
+    .item {
+      width: 100%;
+      max-width: 280px;
+      flex-direction: row;
+      align-items: center;
+      margin: 11.5px 0;
+      .item__img {
+        background-color: $color_circle-advantage;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        @include dspFlex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        img {
+          width: 20px;
+        }
+      }
+      .item__description {
+        width: 70%;
+        text-align: left;
+        font-weight: normal;
+        font-size: 0.9em;
+        margin: auto;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+// section recommended
+#recommended {
+  #tab__slider-1 {
+    .slider__item {
+      max-width: 277px;
+      margin: 0 9px;
+      padding: 5px;
+      background-color: $color_white;
+      .item__img {
+        overflow: hidden;
+        img {
+          width: 270px;
+          height: 210px;
+          object-fit: cover;
+          @include transition;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+      .description__option {
+        ul {
+          @include dspFlex;
+          justify-content: space-around;
+          margin: 20px 0;
+        }
+        .btn {
+          @include btn;
+          width: 115px;
+          height: 40px;
+          border-radius: 5px;
+          text-transform: inherit;
+          background-color: $color_white;
+          color: $color_btnPopular-bg;
+          border: 2px solid $color_btnPopular-bg;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        .uk-active {
+          button {
+            background-color: $color_btnPopular-bg;
+            color: $color_white;
+          }
+        }
+      }
+    }
+    .description__text {
+      text-align: center;
+      .name__house {
+        width: 190px;
+        margin: 0 auto 10px;
+      }
+      .price__now {
+        color: $color_pseudo-el;
+        margin: 0 auto 5px;
+      }
+      .price__house {
+        font-size: 1.5em;
+        margin: 0 auto 10px;
+      }
+      .size__house {
+        margin: 0 auto 20px;
+      }
+    }
+    .more__details-btn {
+      text-align: center;
+      margin: 0 auto 15px;
+      .btn {
+        @include btn;
+        width: 240px;
+        height: 50px;
+        padding: 13px 0 0;
+        display: block;
+        margin: 0 auto;
+        &:hover {
+          @include btn_hover;
+        }
+      }
+    }
+  }
+}

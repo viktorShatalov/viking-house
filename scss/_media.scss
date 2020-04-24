@@ -213,6 +213,14 @@
       margin-bottom: 5px;
     }
   }
+  #advantages {
+    .content {
+      flex-wrap: wrap;
+    }
+    .video {
+      width: 320px;
+    }
+  }
   // footer
   #footer {
     .conteiner {

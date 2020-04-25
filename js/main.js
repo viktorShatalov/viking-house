@@ -18,6 +18,11 @@ jQuery(document).ready(function () {
     // }
     // preloader()
 
+    // not-active menu
+    jQuery('a[aria-current="page"]').on('click', function () {
+        return false;
+    });
+
     //  mobile-menu
 
     jQuery('.burger').click(function () {

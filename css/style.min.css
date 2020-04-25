@@ -2029,18 +2029,21 @@ input[type="submit"]:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.description__additions .left,
-.description__additions .right {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  margin: 0 5px;
+.description__additions > div {
+  width: 50%;
+  padding: 2px 5px;
 }
 
-.description__additions .left .uk-grid-small,
-.description__additions .right .uk-grid-small {
+.description__additions .uk-icon-info {
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.description__additions .uk-grid-small {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2048,8 +2051,7 @@ input[type="submit"]:hover {
       flex-wrap: wrap;
 }
 
-.description__additions .left .uk-width-expand,
-.description__additions .right .uk-width-expand {
+.description__additions .uk-width-expand {
   width: 1px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -2608,16 +2610,8 @@ input[type="submit"]:hover {
   #advantages .video {
     width: 320px;
   }
-  .description__additions {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .description__additions .left,
-  .description__additions .right {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
-    margin: 0;
+  .description__additions > div {
+    width: 100%;
   }
   #video__reviews .video__reviews {
     width: 100%;

@@ -245,22 +245,27 @@
 }
 .description__additions {
   @include dspFlex;
-  .left,
-  .right {
-    flex: 0 1 50%;
-    margin: 0 5px;
-    .uk-grid-small {
-      @include dspFlex;
-      flex-wrap: wrap;
-    }
-    .uk-width-expand {
-      width: 1px;
-      flex: 1;
-      min-width: 0;
-      flex-basis: 1px;
-    }
+  flex-wrap: wrap;
+  & > div {
+    width: 50%;
+    padding: 2px 5px;
+  }
+  .uk-icon-info {
+    cursor: pointer;
+    padding: 0 5px;
+  }
+  .uk-grid-small {
+    @include dspFlex;
+    flex-wrap: wrap;
+  }
+  .uk-width-expand {
+    width: 1px;
+    flex: 1;
+    min-width: 0;
+    flex-basis: 1px;
   }
 }
+
 .btn_after {
   margin: 40px auto 0;
   text-align: center;

@@ -223,11 +223,8 @@
     }
   }
   .description__additions {
-    flex-wrap: wrap;
-    .left,
-    .right {
-      flex: 0 1 100%;
-      margin: 0;
+    & > div {
+      width: 100%;
     }
   }
   #video__reviews {

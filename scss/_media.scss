@@ -235,6 +235,18 @@
       }
     }
   }
+  .contacts__content {
+    .left,
+    .right {
+      flex: 0 1 100%;
+    }
+  }
+  #contacts__form {
+    input[type="submit"] {
+      margin: 0 auto;
+    }
+  }
+
   // footer
   #footer {
     .conteiner {

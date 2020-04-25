@@ -47,9 +47,10 @@
     padding: 40px 0 20px;
   }
 }
-#review__form {
+#review__form,
+#contacts__form {
   & div {
-    margin: 10px 0;
+    margin: 10px auto;
   }
   & input,
   & textarea {
@@ -68,6 +69,7 @@
   }
   input[type="file"] {
     padding: 5px;
+    max-width: 350px;
   }
   textarea {
     @include textarea;

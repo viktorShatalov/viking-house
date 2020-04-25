@@ -15,12 +15,13 @@
   padding: 8px;
   font-size: 1.125em;
   font-family: "Ubuntu normal";
+  border-radius: 3px;
 }
 
 @mixin input-review {
   width: 100%;
-  max-width: 365px;
   padding: 8px;
   font-size: 1.125em;
   font-family: "Ubuntu normal";
+  border-radius: 2px;
 }

@@ -1,0 +1,53 @@
+.contacts__content,
+.flex-coneiner {
+  @include dspFlex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  .left,
+  .right {
+    flex: 0 1 50%;
+    padding: 0 0 50px;
+    h3,
+    h4,
+    p {
+      font-size: 1.125em;
+      padding: 10px 0;
+      margin: 0;
+      font-weight: bold;
+      span {
+        font-weight: normal;
+      }
+    }
+  }
+  .map {
+    overflow: inherit;
+    iframe {
+      width: 550px;
+      height: 218px;
+    }
+  }
+}
+.contacts__form {
+  max-width: 550px;
+  h6 {
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+#contacts__form {
+  width: 100%;
+  max-width: 550px;
+  padding-bottom: 30px;
+  textarea {
+  }
+  input,
+  input[type="file"] {
+    max-width: 255px;
+  }
+  input[type="file"] {
+    font-size: 0.85em;
+    padding: 8px;
+  }
+}

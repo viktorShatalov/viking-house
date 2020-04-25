@@ -2588,24 +2588,29 @@ input[type="submit"]:hover {
   padding: 40px 0 20px;
 }
 
-#review__form div {
-  margin: 10px 0;
+#review__form div,
+#contacts__form div {
+  margin: 10px auto;
 }
 
 #review__form input,
-#review__form textarea {
+#review__form textarea,
+#contacts__form input,
+#contacts__form textarea {
   border: 1px solid #111111;
 }
 
-#review__form input {
+#review__form input,
+#contacts__form input {
   width: 100%;
-  max-width: 365px;
   padding: 8px;
   font-size: 1.125em;
   font-family: "Ubuntu normal";
+  border-radius: 2px;
 }
 
-#review__form input[type="submit"] {
+#review__form input[type="submit"],
+#contacts__form input[type="submit"] {
   border: none;
   text-transform: uppercase;
   border-radius: 0;
@@ -2614,26 +2619,127 @@ input[type="submit"]:hover {
   max-width: 250px;
 }
 
-#review__form input[type="file"] {
+#review__form input[type="file"],
+#contacts__form input[type="file"] {
   padding: 5px;
+  max-width: 350px;
 }
 
-#review__form textarea {
+#review__form textarea,
+#contacts__form textarea {
   width: 100%;
   height: 190px;
   resize: none;
   padding: 8px;
   font-size: 1.125em;
   font-family: "Ubuntu normal";
+  border-radius: 3px;
 }
 
-#review__form p {
+#review__form p,
+#contacts__form p {
   margin: 15px 0;
 }
 
-#review__form a {
+#review__form a,
+#contacts__form a {
   color: #ed1c24;
   text-decoration: underline;
+}
+
+.contacts__content,
+.flex-coneiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__content .left,
+.contacts__content .right,
+.flex-coneiner .left,
+.flex-coneiner .right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 0 50px;
+}
+
+.contacts__content .left h3,
+.contacts__content .left h4,
+.contacts__content .left p,
+.contacts__content .right h3,
+.contacts__content .right h4,
+.contacts__content .right p,
+.flex-coneiner .left h3,
+.flex-coneiner .left h4,
+.flex-coneiner .left p,
+.flex-coneiner .right h3,
+.flex-coneiner .right h4,
+.flex-coneiner .right p {
+  font-size: 1.125em;
+  padding: 10px 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+.contacts__content .left h3 span,
+.contacts__content .left h4 span,
+.contacts__content .left p span,
+.contacts__content .right h3 span,
+.contacts__content .right h4 span,
+.contacts__content .right p span,
+.flex-coneiner .left h3 span,
+.flex-coneiner .left h4 span,
+.flex-coneiner .left p span,
+.flex-coneiner .right h3 span,
+.flex-coneiner .right h4 span,
+.flex-coneiner .right p span {
+  font-weight: normal;
+}
+
+.contacts__content .map,
+.flex-coneiner .map {
+  overflow: inherit;
+}
+
+.contacts__content .map iframe,
+.flex-coneiner .map iframe {
+  width: 550px;
+  height: 218px;
+}
+
+.contacts__form {
+  max-width: 550px;
+}
+
+.contacts__form h6 {
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#contacts__form {
+  width: 100%;
+  max-width: 550px;
+  padding-bottom: 30px;
+}
+
+#contacts__form input,
+#contacts__form input[type="file"] {
+  max-width: 255px;
+}
+
+#contacts__form input[type="file"] {
+  font-size: 0.85em;
+  padding: 8px;
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -2867,6 +2973,15 @@ input[type="submit"]:hover {
   }
   #video__reviews .video__reviews iframe {
     height: 220px;
+  }
+  .contacts__content .left,
+  .contacts__content .right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+  #contacts__form input[type="submit"] {
+    margin: 0 auto;
   }
   #footer .conteiner {
     -ms-flex-wrap: wrap;

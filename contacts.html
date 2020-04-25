@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/uikit.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="js/uikit.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header id="header" class="bg_color">
+    <div class="conteiner header">
+      <div class="logo">
+        <div class="burger">
+          <span></span>
+        </div>
+        <a href="/">
+          <img src="img/logo.png" alt="логотип Строительная компания ВИКИНГ-СТРОЙ">
+        </a>
+      </div>
+      <div class="site_description">
+        <p>
+          Деревянные каркасные дома<br>
+          «под ключ» в Санкт-Петербурге
+        </p>
+      </div>
+      <div class="header_btn">
+        <button class="btn" data-modal-target="#modal">
+          расчитать проект
+        </button>
+      </div>
+      <div class="work_schedule">
+        <div class="work_time">
+          <p>Ежедневно: с 9:00 до 21:00</p>
+        </div>
+        <div class="work_phone">
+          <a href="tel:+7 (812) 930-05-91">+7 (812) 930-05-91</a>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="#" class="active">Главная</a>
+        </li>
+        <li>
+          <a href="#">Проекты и цены</a>
+        </li>
+        <li>
+          <a href="#">Готовые дома</a>
+        </li>
+        <li>
+          <a href="#">Частые вопросы</a>
+        </li>
+        <li>
+          <a href="#">Отзывы</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- main -->
+  <main>
+    <!-- breadcumps -->
+    <div id="breadcumbs">
+      <ul class="conteiner m-auto">
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <a href="#">next page</a>
+        </li>
+        <li>
+          <a href="#">next page</a>
+        </li>
+      </ul>
+    </div>
+    <!-- contacts -->
+    <section id="contacts" class="bg_color">
+      <div class="conteiner m-auto">
+        <div class="head">
+          <h1 class="m-auto">
+            Контакты
+          </h1>
+        </div>
+        <div class="contacts__content">
+          <div class="left">
+            <h3>Компания: <span>Викинт строй</span></h3>
+            <h4>Адрес: <span>127238, г. Москва, Дмитровское шоссе 71Б, офис 708</span></h4>
+            <p>Телефон: <span>8 (800) 250-88-53. Звонок бесплатный.</span></p>
+            <p>Время работы: <span>ежедневно с 9:00 до 21:00</span></p>
+          </div>
+          <div class="right">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.3817382462557!2d37.55672731539585!3d55.856042991492885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537a4969db173%3A0x31413eb565c70a76!2z0JTQvNC40YLRgNC-0LLRgdC60L7QtSDRiC4sIDcx0JEsIDcwOCwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyNzIzOA!5e0!3m2!1sru!2sua!4v1587849696588!5m2!1sru!2sua"
+                width="550" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0">
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__form">
+          <div class="left">
+            <div class="head">
+              <h6>
+                ОБратная связь
+              </h6>
+            </div>
+            <form id="contacts__form">
+              <div class="flex-coneiner">
+                <div>
+                  <input type="name" placeholder="Ваше имя">
+                </div>
+                <div>
+                  <input type="tel" placeholder="Ваш телефон">
+                </div>
+                <div>
+                  <input type="email" placeholder="Эл.почта">
+                </div>
+                <div>
+                  <input type="file" placeholder="Загрузите фото">
+                </div>
+              </div>
+              <div>
+                <textarea placeholder="Ваше сообщение"></textarea>
+              </div>
+              <div class="btn">
+                <input type="submit" value="Отправить">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- card-product advantages -->
+    <section id="advantages">
+      <div class="conteiner m-auto">
+        <div class="content">
+          <div class="left_content">
+            <div class="head">
+              <h5>
+                Видео
+              </h5>
+            </div>
+            <div class="video">
+              <iframe width="560" height="280" src="https://www.youtube.com/embed/nR9updeKwbw" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+          <div class="right__content">
+            <div class="head">
+              <h5>
+                Приемущества
+              </h5>
+            </div>
+            <div class="advantages__items">
+              <div class="item">
+                <div class="item__img">
+                  <img src="img/advantages_1.png" alt="Строим «под ключ»">
+                </div>
+                <div class="item__description">
+                  <p>
+                    Строим «под ключ»
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <img src="img/advantages_6.png" alt="Строим «под ключ»">
+                </div>
+                <div class="item__description">
+                  <p>
+                    Все работы точно в срок
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <img src="img/advantages_2.png" alt="Строим «под ключ»">
+                </div>
+                <div class="item__description">
+                  <p>
+                    Бесплатная доставка в<br> пределах 50 км от города
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <img src="img/advantages_7.png" alt="Строим «под ключ»">
+                </div>
+                <div class="item__description">
+                  <p>
+                    Контроль качества
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <img src="img/advantages_3.png" alt="Строим «под ключ»">
+                </div>
+                <div class="item__description">
+                  <p>
+                    Готовые и индивидуальные проекты
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <img src="img/advantages_8.png" alt="Строим «под ключ»">
+                </div>
+                <div class="item__description">
+                  <p>
+                    Работа по договору
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <img src="img/advantages_4.png" alt="Строим «под ключ»">
+                </div>
+                <div class="item__description">
+                  <p>
+                    Экологичные материалы
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <img src="img/advantages_9.png" alt="Строим «под ключ»">
+                </div>
+                <div class="item__description">
+                  <p>
+                    Без предоплаты
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <img src="img/advantages_5.png" alt="Строим «под ключ»">
+                </div>
+                <div class="item__description">
+                  <p>
+                    Опытные строители
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img">
+                  <img src="img/advantages_10.png" alt="Строим «под ключ»">
+                </div>
+                <div class="item__description">
+                  <p>
+                    Возможна оплата в кредит
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- video reviews -->
+    <section id="video__reviews" class="bg_color">
+      <div class="conteiner m-auto">
+        <div class="head">
+          <h2 class="m-auto">
+            Видеоотзывы
+          </h2>
+        </div>
+        <div class="content">
+          <div class="video__reviews">
+            <iframe class="uk-responsive-width uk-border-rounded" width="1500" height="1080"
+              src="https://www.youtube.com/embed/nR9updeKwbw" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+              uk-responsive style="220px">
+            </iframe>
+          </div>
+          <div class="video__reviews">
+            <iframe class="uk-responsive-width uk-border-rounded" width="1500" height="1080"
+              src="https://www.youtube.com/embed/nR9updeKwbw" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+              uk-responsive style="220px">
+            </iframe>
+          </div>
+          <div class="video__reviews">
+            <iframe class="uk-responsive-width uk-border-rounded" width="1500" height="1080"
+              src="https://www.youtube.com/embed/nR9updeKwbw" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+              uk-responsive style="220px">
+            </iframe>
+          </div>
+          <div class="video__reviews">
+            <iframe class="uk-responsive-width uk-border-rounded" width="1500" height="1080"
+              src="https://www.youtube.com/embed/nR9updeKwbw" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+              uk-responsive style="220px">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- reviews -->
+    <section id="reviews" class="bg_color">
+      <div class="conteiner m-auto">
+        <div class="head">
+          <h2 class="m-auto">
+            ОТЗЫВЫ
+          </h2>
+        </div>
+        <div class="content">
+          <div class="reviews__slider">
+            <div class="slider__item">
+              <div class="item__img">
+                <img src="img/reviews/rewiev.jpg" alt="reviews_img_logo">
+              </div>
+              <div class="item__text">
+                <div class="name">
+                  <p>
+                    <strong>
+                      Эдуард
+                    </strong>
+                  </p>
+                </div>
+                <div class="date">
+                  <span>
+                    26.07.2018
+                  </span>
+                </div>
+                <div class="text">
+                  <p>
+                    Всем здравствуйте! Обратился в СК Викинг по сотрудничеству строительства дома АЛЬФА 9.<br>
+                    Хотелось бы выразить благодарность Консультанту по продаже Владиславу, ну и конечно же Ген.
+                    Директору Романову Алексею!<br>
+                    Планировку данного дома совместно с Алексеем и Владиславом было немного изменена.<br>
+                    Данные сотрудники показали себя, как профессионалы своего дела с качеством, сервисом и уважением к
+                    своему заказчику!
+                  </p>
+                </div>
+                <div class="btn__details">
+                  <a href="#">подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="item__img">
+                <img src="img/reviews/rewiev.jpg" alt="reviews_img_logo">
+              </div>
+              <div class="item__text">
+                <div class="name">
+                  <p>
+                    <strong>
+                      Эдуард
+                    </strong>
+                  </p>
+                </div>
+                <div class="date">
+                  <span>
+                    26.07.2018
+                  </span>
+                </div>
+                <div class="text">
+                  <p>
+                    Всем здравствуйте! Обратился в СК Викинг по сотрудничеству строительства дома АЛЬФА 9.<br>
+                    Хотелось бы выразить благодарность Консультанту по продаже Владиславу, ну и конечно же Ген.
+                    Директору Романову Алексею!<br>
+                    Планировку данного дома совместно с Алексеем и Владиславом было немного изменена.<br>
+                    Данные сотрудники показали себя, как профессионалы своего дела с качеством, сервисом и уважением к
+                    своему заказчику!
+                  </p>
+                </div>
+                <div class="btn__details">
+                  <a href="#">подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="item__img">
+                <img src="img/reviews/rewiev.jpg" alt="reviews_img_logo">
+              </div>
+              <div class="item__text">
+                <div class="name">
+                  <p>
+                    <strong>
+                      Эдуард
+                    </strong>
+                  </p>
+                </div>
+                <div class="date">
+                  <span>
+                    26.07.2018
+                  </span>
+                </div>
+                <div class="text">
+                  <p>
+                    Всем здравствуйте! Обратился в СК Викинг по сотрудничеству строительства дома АЛЬФА 9.<br>
+                    Хотелось бы выразить благодарность Консультанту по продаже Владиславу, ну и конечно же Ген.
+                    Директору Романову Алексею!<br>
+                    Планировку данного дома совместно с Алексеем и Владиславом было немного изменена.<br>
+                    Данные сотрудники показали себя, как профессионалы своего дела с качеством, сервисом и уважением к
+                    своему заказчику!
+                  </p>
+                </div>
+                <div class="btn__details">
+                  <a href="#">подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="item__img">
+                <img src="img/reviews/rewiev.jpg" alt="reviews_img_logo">
+              </div>
+              <div class="item__text">
+                <div class="name">
+                  <p>
+                    <strong>
+                      Эдуард
+                    </strong>
+                  </p>
+                </div>
+                <div class="date">
+                  <span>
+                    26.07.2018
+                  </span>
+                </div>
+                <div class="text">
+                  <p>
+                    Всем здравствуйте! Обратился в СК Викинг по сотрудничеству строительства дома АЛЬФА 9.<br>
+                    Хотелось бы выразить благодарность Консультанту по продаже Владиславу, ну и конечно же Ген.
+                    Директору Романову Алексею!<br>
+                    Планировку данного дома совместно с Алексеем и Владиславом было немного изменена.<br>
+                    Данные сотрудники показали себя, как профессионалы своего дела с качеством, сервисом и уважением к
+                    своему заказчику!
+                  </p>
+                </div>
+                <div class="btn__details">
+                  <a href="#">подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-all__reviews">
+            <a href="#">все отзывы</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer id="footer">
+    <div class="conteiner m-auto">
+      <div class="logo">
+        <a href="/">
+          <img src="img/logo.png" alt="Деревянные каркасные дома
+        «под ключ» в Санкт-Петербурге"></a>
+      </div>
+      <navbar class="footer__menu">
+        <ul>
+          <h3>
+            ДОМА ИЗ БРУСА
+          </h3>
+          <li>
+            <a href="#">Одноэтажные</a>
+          </li>
+          <li>
+            <a href="#">Двухэтажные</a>
+          </li>
+          <li>
+            <a href="#">Полуэтажные</a>
+          </li>
+          <li>
+            <a href="#">С мансардой</a>
+          </li>
+        </ul>
+        <ul>
+          <h3>
+            кАРКАСНЫЕ ДОМА
+          </h3>
+          <li>
+            <a href="#">Одноэтажные</a>
+          </li>
+          <li>
+            <a href="#">Двухэтажные</a>
+          </li>
+          <li>
+            <a href="#">Полуэтажные</a>
+          </li>
+          <li>
+            <a href="#">С мансардой</a>
+          </li>
+        </ul>
+      </navbar>
+      <div class="footer__contacts">
+        <div class="social">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="img/social/vk.png" alt="vk-icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/social/f.png" alt="fb-icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/social/t.png" alt="telegram-icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <p>
+            <small>
+              <strong>
+                Ежедневно: с 9:00 до 21:00
+              </strong>
+            </small>
+          </p>
+          <a href="tel:+7 (812) 930-05-91">+7 (812) 930-05-91 </a>
+          <a href="tel:+7 (911) 810-04-01">+7 (911) 810-04-01</a>
+          <a class="mail" href="mailto:blok35@yandex.ru">blok35@yandex.ru</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__signature">
+      <p class="conteiner">
+        <small>
+          © 2020 ООО Строительная компания «Викинг». Все права защищены. Строительство деревянных домов и бань под ключ.
+          Сайт не является публичной офертой.
+        </small>
+      </p>
+    </div>
+  </footer>
+  <!-- modal -->
+  <div class="modal" id="modal">
+    <div class="modal__header">
+      <h3>
+        Расчёт проекта
+      </h3>
+      <div data-close-button class="close-button">
+        <span></span>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="form">
+        <form action="post" class="modal-form">
+          <div class="about__order">
+            <div class="left">
+              <div class="type_of">
+                <label for="type_of">
+                  <input type="radio" name="type_of" id="">
+                  <input type="radio" name="type_of" id="">
+                  <input type="radio" name="type_of" id="">
+                </label>
+              </div>
+              <div class="number_of_storeys">
+                <label for="number_of_storeys">
+                  <input type="radio" name="number_of_storeys" id="">
+                  <input type="radio" name="number_of_storeys" id="">
+                </label>
+              </div>
+              <div class="foundation">
+                <label for="foundation">
+                  <input type="radio" name="foundation" id="">
+                  <input type="radio" name="foundation" id="">
+                </label>
+              </div>
+              <div class="building__area">
+                <input type="text">
+              </div>
+            </div>
+            <div class="right">
+              <div class="wall__thickness">
+                <label for="wall__thickness">
+                  <input type="radio" name="wall__thickness" id="">
+                  <input type="radio" name="wall__thickness" id="">
+                  <input type="radio" name="wall__thickness" id="">
+                </label>
+              </div>
+              <div class="finish">
+                <label for="finish">
+                  <input type="radio" name="finish" id="">
+                  <input type="radio" name="finish" id="">
+                </label>
+              </div>
+              <div class="workers__home">
+                <label for="workers__home">
+                  <input type="radio" name="workers__home" id="">
+                  <input type="radio" name="workers__home" id="">
+                </label>
+              </div>
+              <div class="totall__prace">
+                <p>
+                  <strong>
+                    <span>
+                      8 800
+                    </span>
+                    руб.
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="form_data">
+            <p>
+              Ваши данные:
+            </p>
+            <div class="form-input__modal">
+              <div class="left">
+                <input type="text" placeholder="Ваше Bмя">
+                <input type="tel" placeholder="Ваш Tелефон">
+                <input type="text" placeholder="Ваш E-mail">
+                <input type="text" placeholder="Адрес строительства">
+                <input type="file" name="" id="">
+              </div>
+              <div class="right">
+                <textarea name="" id=""></textarea>
+              </div>
+            </div>
+            <input data-close-button type="submit" value="Отправить заявку">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="overlay"></div>
+</body>
+
+
+</html>

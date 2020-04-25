@@ -230,6 +230,14 @@
       margin: 0;
     }
   }
+  #video__reviews {
+    .video__reviews {
+      width: 100%;
+      iframe {
+        height: 220px;
+      }
+    }
+  }
   // footer
   #footer {
     .conteiner {

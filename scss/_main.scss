@@ -75,9 +75,11 @@
   #tab__slider-3 {
     .slider__item {
       max-width: 277px;
-      margin: 0 9px;
+      margin: 3px 10px;
       padding: 5px;
       background-color: $color_white;
+      position: relative;
+      @include living-house-area;
       .item__img {
         overflow: hidden;
         img {
@@ -192,6 +194,8 @@
       margin: 0 9px;
       padding: 5px;
       background-color: $color_white;
+      position: relative;
+      @include living-house-area;
       .item__img {
         overflow: hidden;
         img {

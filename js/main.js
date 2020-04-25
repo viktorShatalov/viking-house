@@ -2,21 +2,21 @@ jQuery(document).ready(function () {
 
     // Preloader 
 
-    function preloader() {
-        var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-        var preloader = jQuery('#preloader');
-        if (!isMobile) {
-            setTimeout(function () {
-                preloader.addClass('preloaded');
-            }, 350);
-            setTimeout(function () {
-                preloader.remove();
-            }, 1500);
-        } else {
-            preloader.remove();
-        }
-    }
-    preloader()
+    // function preloader() {
+    //     var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+    //     var preloader = jQuery('#preloader');
+    //     if (!isMobile) {
+    //         setTimeout(function () {
+    //             preloader.addClass('preloaded');
+    //         }, 350);
+    //         setTimeout(function () {
+    //             preloader.remove();
+    //         }, 1500);
+    //     } else {
+    //         preloader.remove();
+    //     }
+    // }
+    // preloader()
 
     //  mobile-menu
 

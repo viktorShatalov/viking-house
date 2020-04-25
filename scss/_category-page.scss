@@ -5,6 +5,7 @@
       @include dspFlex;
       flex-wrap: wrap;
       li {
+        margin: 0 5px;
         &:first-child {
           a {
             width: 100%;
@@ -47,7 +48,8 @@
           }
         }
         a {
-          width: 160px;
+          width: 100%;
+          padding: 10px;
         }
       }
     }

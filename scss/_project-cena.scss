@@ -47,6 +47,8 @@
     padding: 5px;
     background-color: $color_white;
     @include transition;
+    position: relative;
+    @include living-house-area;
     &:hover {
       @include boxShadow;
     }

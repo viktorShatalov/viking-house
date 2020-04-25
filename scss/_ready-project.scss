@@ -1,0 +1,72 @@
+.page__description {
+  padding: 10px 10px 0;
+}
+#ready__project {
+  .type ul li:first-child a {
+    padding: 10px 10px 0 0;
+  }
+  .all-category-products {
+    padding: 10px 0;
+    ul {
+      li {
+        display: block;
+        @include dspFlex;
+        padding: 10px 5px;
+        font-size: 0.9em;
+        .description__name {
+          display: inline-block;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            left: 102%;
+            right: -9999px;
+            bottom: 0;
+            top: 0;
+            border-bottom: 1px solid $color_btn-bg;
+            opacity: 0.35;
+          }
+        }
+        .description__left {
+          overflow: hidden;
+          width: 86%;
+        }
+        .description__quantity {
+          color: $color_text-p;
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+  .description__text {
+    .name__house {
+      font-size: 1em;
+      color: $color_pseudo-el;
+      padding: 10px;
+      text-align: center;
+      p {
+        line-height: 22px;
+        padding: 0 0 5px;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+// video__reviews
+#video__reviews {
+  .video__reviews {
+    width: 24%;
+    margin: 20px 0;
+    @include boxShadow_video;
+    iframe {
+      height: 100%;
+    }
+  }
+  .content {
+    @include dspFlex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

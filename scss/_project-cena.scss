@@ -36,90 +36,91 @@
     }
   }
 }
-.all-category-products {
-  padding: 50px 0;
-  @include dspFlex;
-  align-items: center;
-  flex-wrap: wrap;
-  .slider__item {
-    max-width: 277px;
-    margin: 10px 9px;
-    padding: 5px;
-    background-color: $color_white;
-    @include transition;
-    position: relative;
-    @include living-house-area;
-    &:hover {
-      @include boxShadow;
-    }
-    .item__img {
-      overflow: hidden;
-      img {
-        width: 270px;
-        height: 210px;
-        object-fit: cover;
-        @include transition;
-        &:hover {
-          transform: scale(1.2);
+#proekty,
+#ready__project {
+  .all-category-products {
+    padding: 50px 0 0;
+    @include dspFlex;
+    align-items: center;
+    flex-wrap: wrap;
+    .slider__item {
+      max-width: 277px;
+      margin: 3px 9px;
+      padding: 5px;
+      background-color: $color_white;
+      position: relative;
+      @include living-house-area;
+      .item__img {
+        overflow: hidden;
+        img {
+          width: 270px;
+          height: 210px;
+          object-fit: cover;
+          @include transition;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+      .description__option {
+        ul {
+          @include dspFlex;
+          justify-content: space-around;
+          margin: 20px 0;
+          width: 100%;
+        }
+        .btn {
+          @include btn;
+          width: 115px;
+          height: 40px;
+          border-radius: 5px;
+          text-transform: inherit;
+          background-color: $color_white;
+          color: $color_btnPopular-bg;
+          border: 2px solid $color_btnPopular-bg;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        .uk-active {
+          button {
+            background-color: $color_btnPopular-bg;
+            color: $color_white;
+          }
         }
       }
     }
-    .description__option {
-      @include dspFlex;
-      justify-content: space-around;
-      margin: 20px 0;
-      .btn.active {
-        @include btn;
-        width: 115px;
-        height: 40px;
-        background-color: $color_btnPopular-bg;
-        color: $color_white;
-        border-radius: 5px;
-        text-transform: inherit;
-        border: 2px solid $color_btnPopular-bg;
+    .description__text {
+      text-align: center;
+      .name__house {
+        width: 190px;
+        margin: 0 auto 10px;
       }
+      .price__now {
+        color: $color_pseudo-el;
+        margin: 0 auto 5px;
+      }
+      .price__house {
+        font-size: 1.5em;
+        margin: 0 auto 10px;
+      }
+      .size__house {
+        margin: 0 auto 20px;
+      }
+    }
+    .more__details-btn {
+      text-align: center;
+      margin: 0 auto 15px;
       .btn {
         @include btn;
-        width: 115px;
-        height: 40px;
-        border-radius: 5px;
-        text-transform: inherit;
-        background-color: $color_white;
-        color: $color_btnPopular-bg;
-        border: 2px solid $color_btnPopular-bg;
+        width: 240px;
+        height: 50px;
+        padding: 13px 0 0;
+        display: block;
+        margin: 0 auto;
         &:hover {
-          transform: scale(1.1);
+          @include btn_hover;
         }
-      }
-    }
-  }
-  .description__text {
-    text-align: center;
-    .name__house {
-      width: 190px;
-      margin: 0 auto 10px;
-    }
-    .price__now {
-      color: $color_pseudo-el;
-      margin: 0 auto 5px;
-    }
-    .price__house {
-      font-size: 1.5em;
-      margin: 0 auto 10px;
-    }
-    .size__house {
-      margin: 0 auto 20px;
-    }
-  }
-  .more__details-btn {
-    text-align: center;
-    margin: 0 auto 15px;
-    .btn {
-      @include btn;
-      width: 240px;
-      height: 50px;
-      &:hover {
-        @include btn_hover;
       }
     }
   }

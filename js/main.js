@@ -111,7 +111,7 @@ jQuery(document).ready(function () {
         lazyLoad: "progressive",
         asNavFor: '.slider-for',
         slidesToShow: 3,
-        infinite: true,
+        infinite: false,
         autoplay: false,
         focusOnSelect: true,
         draggable: false,

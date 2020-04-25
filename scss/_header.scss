@@ -59,6 +59,7 @@
         &[aria-current="page"] {
           border-bottom: 3px solid $color_link-active;
           color: $color_link-active;
+          cursor: default;
         }
         &.active {
           border-bottom: 3px solid $color_link-active;

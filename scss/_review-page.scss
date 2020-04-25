@@ -1,0 +1,82 @@
+.reviews__page-content {
+  .reviews__items {
+    .reviews__item {
+      background-color: $color_white;
+      padding: 20px;
+      margin-bottom: 30px;
+      .reviews__img {
+        float: left;
+        width: 250px;
+        margin: 0 20px 10px 0;
+        img {
+          width: 250px;
+          height: 180px;
+          object-fit: cover;
+        }
+      }
+      .review__content {
+        .review__head {
+          font-weight: bold;
+          font-size: 1.5em;
+          margin-bottom: 20px;
+          color: $color_black;
+        }
+        .review__description {
+          text-align: justify;
+          margin-bottom: 20px;
+          line-height: 24px;
+          font-size: 1.25em;
+        }
+        .review__location {
+          font-style: italic;
+          opacity: 0.8;
+          text-align: right;
+          @include transition;
+          a:hover {
+            text-decoration: underline;
+            color: $color_footerLink-hover;
+          }
+        }
+      }
+    }
+  }
+}
+.review__form {
+  h4 {
+    font-size: 1.75em;
+    padding: 40px 0 20px;
+  }
+}
+#review__form {
+  & div {
+    margin: 10px 0;
+  }
+  & input,
+  & textarea {
+    border: 1px solid $color_black;
+  }
+  input {
+    @include input-review;
+  }
+  input[type="submit"] {
+    border: none;
+    text-transform: uppercase;
+    border-radius: 0;
+    margin-left: 0;
+    background-color: $color_btn-bg;
+    max-width: 250px;
+  }
+  input[type="file"] {
+    padding: 5px;
+  }
+  textarea {
+    @include textarea;
+  }
+  p {
+    margin: 15px 0;
+  }
+  a {
+    color: $color_link-active;
+    text-decoration: underline;
+  }
+}

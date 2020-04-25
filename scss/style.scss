@@ -2,6 +2,7 @@
 @import "_fonts";
 @import "_variables";
 @import "_mixin";
+@import "_mixin-form";
 @import "_buttons";
 
 /* общие настройки */
@@ -34,8 +35,11 @@
 // ready-project
 @import "ready-project";
 
-// card-product
+// review-card-product
 @import "review-card-product";
+
+// review-page
+@import "review-page";
 
 // media-query
 @import "_media.scss";

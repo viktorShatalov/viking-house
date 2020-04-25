@@ -7,6 +7,9 @@
   }
   .all-category-products {
     padding: 10px 0;
+    .slider__item {
+      margin: 10px 9px;
+    }
     ul {
       li {
         display: block;

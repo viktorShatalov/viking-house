@@ -594,7 +594,8 @@ ul {
 
 .tab-content__item #tab__slider-1 .slider__item,
 .tab-content__item #tab__slider-2 .slider__item,
-.tab-content__item #tab__slider-3 .slider__item {
+.tab-content__item #tab__slider-3 .slider__item,
+.tab-content__item .all-category-products .slider__item {
   max-width: 277px;
   margin: 3px 10px;
   padding: 5px;
@@ -604,7 +605,8 @@ ul {
 
 .tab-content__item #tab__slider-1 .slider__item .living-house-area,
 .tab-content__item #tab__slider-2 .slider__item .living-house-area,
-.tab-content__item #tab__slider-3 .slider__item .living-house-area {
+.tab-content__item #tab__slider-3 .slider__item .living-house-area,
+.tab-content__item .all-category-products .slider__item .living-house-area {
   position: absolute;
   top: 4px;
   left: 4px;
@@ -630,13 +632,15 @@ ul {
 
 .tab-content__item #tab__slider-1 .slider__item .item__img,
 .tab-content__item #tab__slider-2 .slider__item .item__img,
-.tab-content__item #tab__slider-3 .slider__item .item__img {
+.tab-content__item #tab__slider-3 .slider__item .item__img,
+.tab-content__item .all-category-products .slider__item .item__img {
   overflow: hidden;
 }
 
 .tab-content__item #tab__slider-1 .slider__item .item__img img,
 .tab-content__item #tab__slider-2 .slider__item .item__img img,
-.tab-content__item #tab__slider-3 .slider__item .item__img img {
+.tab-content__item #tab__slider-3 .slider__item .item__img img,
+.tab-content__item .all-category-products .slider__item .item__img img {
   width: 270px;
   height: 210px;
   -o-object-fit: cover;
@@ -647,14 +651,16 @@ ul {
 
 .tab-content__item #tab__slider-1 .slider__item .item__img img:hover,
 .tab-content__item #tab__slider-2 .slider__item .item__img img:hover,
-.tab-content__item #tab__slider-3 .slider__item .item__img img:hover {
+.tab-content__item #tab__slider-3 .slider__item .item__img img:hover,
+.tab-content__item .all-category-products .slider__item .item__img img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
 .tab-content__item #tab__slider-1 .slider__item .description__option ul,
 .tab-content__item #tab__slider-2 .slider__item .description__option ul,
-.tab-content__item #tab__slider-3 .slider__item .description__option ul {
+.tab-content__item #tab__slider-3 .slider__item .description__option ul,
+.tab-content__item .all-category-products .slider__item .description__option ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -665,7 +671,8 @@ ul {
 
 .tab-content__item #tab__slider-1 .slider__item .description__option .btn,
 .tab-content__item #tab__slider-2 .slider__item .description__option .btn,
-.tab-content__item #tab__slider-3 .slider__item .description__option .btn {
+.tab-content__item #tab__slider-3 .slider__item .description__option .btn,
+.tab-content__item .all-category-products .slider__item .description__option .btn {
   width: 100%;
   outline: none;
   cursor: pointer;
@@ -687,61 +694,70 @@ ul {
 
 .tab-content__item #tab__slider-1 .slider__item .description__option .btn:hover,
 .tab-content__item #tab__slider-2 .slider__item .description__option .btn:hover,
-.tab-content__item #tab__slider-3 .slider__item .description__option .btn:hover {
+.tab-content__item #tab__slider-3 .slider__item .description__option .btn:hover,
+.tab-content__item .all-category-products .slider__item .description__option .btn:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 .tab-content__item #tab__slider-1 .slider__item .description__option .uk-active button,
 .tab-content__item #tab__slider-2 .slider__item .description__option .uk-active button,
-.tab-content__item #tab__slider-3 .slider__item .description__option .uk-active button {
+.tab-content__item #tab__slider-3 .slider__item .description__option .uk-active button,
+.tab-content__item .all-category-products .slider__item .description__option .uk-active button {
   background-color: #39b549;
   color: white;
 }
 
 .tab-content__item #tab__slider-1 .description__text,
 .tab-content__item #tab__slider-2 .description__text,
-.tab-content__item #tab__slider-3 .description__text {
+.tab-content__item #tab__slider-3 .description__text,
+.tab-content__item .all-category-products .description__text {
   text-align: center;
 }
 
 .tab-content__item #tab__slider-1 .description__text .name__house,
 .tab-content__item #tab__slider-2 .description__text .name__house,
-.tab-content__item #tab__slider-3 .description__text .name__house {
+.tab-content__item #tab__slider-3 .description__text .name__house,
+.tab-content__item .all-category-products .description__text .name__house {
   width: 190px;
   margin: 0 auto 10px;
 }
 
 .tab-content__item #tab__slider-1 .description__text .price__now,
 .tab-content__item #tab__slider-2 .description__text .price__now,
-.tab-content__item #tab__slider-3 .description__text .price__now {
+.tab-content__item #tab__slider-3 .description__text .price__now,
+.tab-content__item .all-category-products .description__text .price__now {
   color: #ed1c24;
   margin: 0 auto 5px;
 }
 
 .tab-content__item #tab__slider-1 .description__text .price__house,
 .tab-content__item #tab__slider-2 .description__text .price__house,
-.tab-content__item #tab__slider-3 .description__text .price__house {
+.tab-content__item #tab__slider-3 .description__text .price__house,
+.tab-content__item .all-category-products .description__text .price__house {
   font-size: 1.5em;
   margin: 0 auto 10px;
 }
 
 .tab-content__item #tab__slider-1 .description__text .size__house,
 .tab-content__item #tab__slider-2 .description__text .size__house,
-.tab-content__item #tab__slider-3 .description__text .size__house {
+.tab-content__item #tab__slider-3 .description__text .size__house,
+.tab-content__item .all-category-products .description__text .size__house {
   margin: 0 auto 20px;
 }
 
 .tab-content__item #tab__slider-1 .more__details-btn,
 .tab-content__item #tab__slider-2 .more__details-btn,
-.tab-content__item #tab__slider-3 .more__details-btn {
+.tab-content__item #tab__slider-3 .more__details-btn,
+.tab-content__item .all-category-products .more__details-btn {
   text-align: center;
   margin: 0 auto 15px;
 }
 
 .tab-content__item #tab__slider-1 .more__details-btn .btn,
 .tab-content__item #tab__slider-2 .more__details-btn .btn,
-.tab-content__item #tab__slider-3 .more__details-btn .btn {
+.tab-content__item #tab__slider-3 .more__details-btn .btn,
+.tab-content__item .all-category-products .more__details-btn .btn {
   width: 100%;
   outline: none;
   cursor: pointer;
@@ -761,7 +777,8 @@ ul {
 
 .tab-content__item #tab__slider-1 .more__details-btn .btn:hover,
 .tab-content__item #tab__slider-2 .more__details-btn .btn:hover,
-.tab-content__item #tab__slider-3 .more__details-btn .btn:hover {
+.tab-content__item #tab__slider-3 .more__details-btn .btn:hover,
+.tab-content__item .all-category-products .more__details-btn .btn:hover {
   background-color: white;
   border: 1px solid #608f93;
   color: #608f93;

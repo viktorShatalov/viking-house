@@ -1147,8 +1147,8 @@ ul {
 }
 
 .modal {
-  position: fixed;
-  top: 50%;
+  position: absolute;
+  top: 75%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
@@ -1156,7 +1156,7 @@ ul {
   -webkit-box-shadow: 0px 0px 59px 0px rgba(35, 19, 0, 0.58);
           box-shadow: 0px 0px 59px 0px rgba(35, 19, 0, 0.58);
   width: 100%;
-  max-width: 1010px;
+  max-width: 1000px;
   z-index: 6;
   background-color: white;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1244,13 +1244,56 @@ ul {
   color: white;
   text-align: center;
   text-transform: uppercase;
-  padding: 20px 0;
+  padding: 28px 0;
   font-family: "Next_Art normal";
   letter-spacing: 2px;
 }
 
 .form_data {
   background-color: #cfdfdf;
+}
+
+.modal-form {
+  color: #111111;
+}
+
+.modal-form legend {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.125em;
+  padding: 0 0 15px;
+}
+
+.modal-form .input__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-form .input__box label {
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.form_data legend {
+  padding: 20px 30px;
+}
+
+.form_data .btn {
+  padding: 20px 0;
+}
+
+.totall__prace p {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.totall__prace p span {
+  color: #111111;
 }
 
 .form-input__modal {
@@ -1262,7 +1305,9 @@ ul {
 }
 
 .form-input__modal input[type="text"],
-.form-input__modal input[type="tel"] {
+.form-input__modal input[type="tel"],
+.form-input__modal input[type="email"],
+.form-input__modal input[type="file"] {
   border-radius: 5px;
   max-width: 365px;
   width: 100%;
@@ -1275,12 +1320,15 @@ ul {
   max-width: 220px;
   border-radius: 5px;
   color: #828282;
-  margin: 10px 5px;
+  margin: 0px auto 10px;
+  padding: 0 10px;
+  font-size: 0.9em;
 }
 
 .form-input__modal input[type="file"] {
-  max-width: 220px;
-  margin: 10px 0 10px 5px;
+  background-color: #b0c8d1;
+  padding: 10px 5px;
+  margin-left: 13px;
 }
 
 .form-input__modal .left,
@@ -1299,29 +1347,46 @@ ul {
   padding: 5px;
 }
 
+.form-input__modal .right textarea {
+  resize: none;
+  width: 100%;
+  min-height: 140px;
+  margin: 0 20px 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
 input[type="submit"] {
-  border: none;
-  background: #39b549;
-  color: white;
-  border-radius: 50px;
-  height: 40px;
-  max-width: 220px;
-  font-size: 1.25em;
+  width: 100%;
+  outline: none;
   cursor: pointer;
-  margin: 0 auto;
-  display: block;
+  border: 1px solid #608f93;
+  text-transform: uppercase;
+  background-color: #608f93;
+  font-family: inherit;
+  font-size: 1em;
   -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: block;
+  max-width: 240px;
+  height: 50px;
+  background-color: #39b549;
+  color: white;
+  margin: 0 auto;
+  border: 1px solid #39b549;
   transition: all 0.3s ease;
 }
 
 input[type="submit"]:hover {
-  opacity: 0.75;
+  background-color: #0f861f;
 }
 
 .about__order {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   color: #111111;
   padding: 30px 40px 20px;
 }
@@ -2590,7 +2655,7 @@ input[type="submit"]:hover {
 
 #review__form div,
 #contacts__form div {
-  margin: 10px auto;
+  margin: 10px 0;
 }
 
 #review__form input,
@@ -2852,12 +2917,23 @@ input[type="submit"]:hover {
   .navbar.active {
     left: 0;
   }
+  .modal {
+    top: 100%;
+  }
+  .form-input__modal input[type="file"] {
+    margin-left: auto;
+  }
+  .form .left,
+  .form .right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
   .modal__header h3 {
     font-size: 1.5em;
   }
-  .close-button {
-    top: 12px;
-    right: 10px;
+  .modal-form legend {
+    text-align: center;
   }
   .tab-header {
     -ms-flex-wrap: wrap;

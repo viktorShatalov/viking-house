@@ -101,14 +101,28 @@
     left: 0;
   }
   // modal
+  .modal {
+    top: 100%;
+  }
+  .form-input__modal {
+    input[type="file"] {
+      margin-left: auto;
+    }
+  }
+
+  .form {
+    .left,
+    .right {
+      flex: 1 1 100%;
+    }
+  }
   .modal__header {
     h3 {
       font-size: 1.5em;
     }
   }
-  .close-button {
-    top: 12px;
-    right: 10px;
+  .modal-form legend {
+    text-align: center;
   }
   // main
   .tab-header {

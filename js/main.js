@@ -128,15 +128,81 @@ jQuery(document).ready(function () {
     });
 
 
-    // rangeslider
+    // calculator
 
-    let slider = document.getElementById("myRange");
-    let outputRange = document.querySelector('.building__area-totall')
+    void function () {
+        "use strict";
+        const state = {
+            "type_of": {
+                "type_of_1": 8800,
+                "type_of_2": 8000,
+                "type_of_3": 8500
+            },
+            "number_of_storeys": {
+                "number_of_storeys_1": 0,
+                "number_of_storeys_2": 1000,
+            },
+            "foundation": {
+                "foundation_1": 0,
+                "foundation_2": 1500
+            },
+            "wall__thickness": {
+                "p100mm": 0,
+                "p150mm": 1000,
+                "p200mm": 2000,
+            },
+            "finish": {
+                "without_finish": 0,
+                "full_construction": 2500,
+            },
+            "workers__home": {
+                "has": 0,
+                "doesnt_have": 18000,
+                "not_multiply": true,
+            },
+        };
 
-    outputRange.innerHTML = slider.value;
+        let inputs = document.getElementsByTagName("input");
 
-    slider.oninput = function () {
-        outputRange.innerHTML = this.value;
-    }
+        Array.from(inputs).forEach(input => {
+            input.addEventListener('input', calculate);
+        });
+
+        function calculate() {
+            let currentInput;
+            let multipliedValue = 0;
+            let notMultipliedValue = 0;
+            const myRangeValue = Number(document.querySelector('#myRange').value);
+            document.querySelector('.building__area-total').textContent = myRangeValue;
+            const totalPriceNode = document.querySelector('#totalPrice');
+            let totalPrice = 0;
+            for (let typeOfJobs in state) {
+                for (let parameterOfEveryJob in state[typeOfJobs]) {
+                    if (parameterOfEveryJob === 'not_multiply') {
+                        continue;
+                    }
+                    currentInput = document.querySelector(`#${parameterOfEveryJob}`);
+                    if (!currentInput && parameterOfEveryJob !== "not_multiply") {
+                        console.log('id в инпуте: ' + parameterOfEveryJob + ' не найден!');
+                        continue;
+                    }
+
+                    if (currentInput.type === 'radio' && currentInput.checked) {
+                        if (state[typeOfJobs]["not_multiply"] && state[typeOfJobs]["not_multiply"] === true) {
+                            notMultipliedValue += state[typeOfJobs][parameterOfEveryJob];
+                        } else {
+                            multipliedValue += state[typeOfJobs][parameterOfEveryJob];
+                        }
+                    }
+                }
+            }
+            totalPrice = multipliedValue * myRangeValue + notMultipliedValue;
+            totalPriceNode.textContent = `${totalPrice}`;
+        }
+
+        calculate();
+
+    }();
+
 
 })

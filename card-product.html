@@ -2539,11 +2539,11 @@
                     </legend>
                     <div class="input__box">
                       <label>
-                        <input type="radio" name="foundation" checked>
+                        <input type="radio" name="foundation" id="foundation_1" checked>
                         Есть на участке
                       </label>
                       <label>
-                        <input type="radio" name="foundation">
+                        <input type="radio" name="foundation" id="foundation_2">
                         Свайно-винтовой
                       </label>
                     </div>
@@ -2552,8 +2552,8 @@
                     <legend>
                       Площадь застройки,м<sup>2</sup>:
                     </legend>
-                    <input type="range" min="1" max="150" value="1" class="slider" id="myRange">
-                    <span class="building__area-totall">1</span>
+                    <input type="range" min="1" max="150" value="1" step="1" class="slider" id="myRange">
+                    <span class="building__area-total">1</span>
                   </div>
                 </div>
                 <div class="right">
@@ -2563,15 +2563,15 @@
                     </legend>
                     <div class="input__box">
                       <label>
-                        <input type="radio" name="wall__thickness" checked>
+                        <input type="radio" name="wall__thickness" id="p100mm" checked>
                         100мм
                       </label>
                       <label>
-                        <input type="radio" name="wall__thickness">
+                        <input type="radio" name="wall__thickness" id="p150mm" >
                         150мм
                       </label>
                       <label>
-                        <input type="radio" name="wall__thickness">
+                        <input type="radio" name="wall__thickness" id="p200mm">
                         200мм
                       </label>
                     </div>
@@ -2582,11 +2582,11 @@
                     </legend>
                     <div class="input__box">
                       <label>
-                        <input type="radio" name="finish" checked>
+                        <input type="radio" name="finish" id="without_finish" checked>
                         Без отделки
                       </label>
                       <label>
-                        <input type="radio" name="finish">
+                        <input type="radio" name="finish" id="full_construction">
                         Под ключ
                       </label>
                     </div>
@@ -2597,11 +2597,11 @@
                     </legend>
                     <div class="input__box">
                       <label>
-                        <input type="radio" name="workers__home" checked>
+                        <input type="radio" name="workers__home" id="has" checked>
                         Есть на участке
                       </label>
                       <label>
-                        <input type="radio" name="workers__home">
+                        <input type="radio" name="workers__home" id="doesnt_have">
                         Бытовка
                       </label>
                     </div>
@@ -2611,7 +2611,7 @@
                       Цена:
                     </legend>
                     <p>
-                      <span id="totallPrice">
+                      <span id="totalPrice">
                         8 800
                       </span>
                       РУБ.

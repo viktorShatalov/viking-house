@@ -59,6 +59,7 @@
     border-bottom: 3px solid $color_link-active;
   }
 }
+@include living-house-area;
 .tab-content__item {
   display: none;
   &.active {

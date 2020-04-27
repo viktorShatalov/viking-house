@@ -480,77 +480,144 @@
           <div class="about__order">
             <div class="left">
               <div class="type_of">
-                <label for="type_of">
-                  <input type="radio" name="type_of" id="">
-                  <input type="radio" name="type_of" id="">
-                  <input type="radio" name="type_of" id="">
-                </label>
+                <legend>
+                  Вид строения:
+                </legend>
+                <div class="input__box">
+                  <label>
+                    <input type="radio" name="type_of" checked>
+                    Дом из бруса
+                  </label>
+                  <label>
+                    <input type="radio" name="type_of">
+                    Каркасный дом
+                  </label>
+                  <label>
+                    <input type="radio" name="type_of">
+                    Баня из бруса
+                  </label>
+                </div>
               </div>
               <div class="number_of_storeys">
-                <label for="number_of_storeys">
-                  <input type="radio" name="number_of_storeys" id="">
-                  <input type="radio" name="number_of_storeys" id="">
-                </label>
+                <legend>
+                  Этажность:
+                </legend>
+                <div class="input__box">
+                  <label>
+                    <input type="radio" name="number_of_storeys" checked>
+                    Один этаж
+                  </label>
+                  <label>
+                    <input type="radio" name="number_of_storeys">
+                    Два этажа
+                  </label>
+                </div>
               </div>
               <div class="foundation">
-                <label for="foundation">
-                  <input type="radio" name="foundation" id="">
-                  <input type="radio" name="foundation" id="">
-                </label>
+                <legend>
+                  Фундамент:
+                </legend>
+                <div class="input__box">
+                  <label>
+                    <input type="radio" name="foundation" checked>
+                    Есть на участке
+                  </label>
+                  <label>
+                    <input type="radio" name="foundation">
+                    Свайно-винтовой
+                  </label>
+                </div>
               </div>
               <div class="building__area">
-                <input type="text">
+                <legend>
+                  Площадь застройки,м<sup>2</sup>:
+                </legend>
+                <input type="range" min="1" max="150" value="1" class="slider" id="myRange">
+                <span class="building__area-totall">1</span>М<sup>2</sup>
               </div>
             </div>
             <div class="right">
               <div class="wall__thickness">
-                <label for="wall__thickness">
-                  <input type="radio" name="wall__thickness" id="">
-                  <input type="radio" name="wall__thickness" id="">
-                  <input type="radio" name="wall__thickness" id="">
-                </label>
+                <legend>
+                  Толщина стен:
+                </legend>
+                <div class="input__box">
+                  <label>
+                    <input type="radio" name="wall__thickness" checked>
+                    100мм
+                  </label>
+                  <label>
+                    <input type="radio" name="wall__thickness">
+                    150мм
+                  </label>
+                  <label>
+                    <input type="radio" name="wall__thickness">
+                    200мм
+                  </label>
+                </div>
               </div>
               <div class="finish">
-                <label for="finish">
-                  <input type="radio" name="finish" id="">
-                  <input type="radio" name="finish" id="">
-                </label>
+                <legend>
+                  Отделка:
+                </legend>
+                <div class="input__box">
+                  <label>
+                    <input type="radio" name="finish" checked>
+                    Без отделки
+                  </label>
+                  <label>
+                    <input type="radio" name="finish">
+                    Под ключ
+                  </label>
+                </div>
               </div>
               <div class="workers__home">
-                <label for="workers__home">
-                  <input type="radio" name="workers__home" id="">
-                  <input type="radio" name="workers__home" id="">
-                </label>
+                <legend>
+                  Проживание рабочих:
+                </legend>
+                <div class="input__box">
+                  <label>
+                    <input type="radio" name="workers__home" checked>
+                    Есть на участке
+                  </label>
+                  <label>
+                    <input type="radio" name="workers__home">
+                    Бытовка
+                  </label>
+                </div>
               </div>
               <div class="totall__prace">
+                <legend>
+                  Цена:
+                </legend>
                 <p>
-                  <strong>
-                    <span>
-                      8 800
-                    </span>
-                    руб.
-                  </strong>
+                  <span id="totallPrice">
+                    <strong>8 800</strong>
+                  </span>
+                  РУБ.
                 </p>
               </div>
             </div>
           </div>
           <div class="form_data">
-            <p>
+            <legend>
               Ваши данные:
-            </p>
+            </legend>
             <div class="form-input__modal">
               <div class="left">
-                <input type="text" placeholder="Ваше Bмя">
+                <input type="text" placeholder="Ваше Имя">
                 <input type="tel" placeholder="Ваш Tелефон">
-                <input type="text" placeholder="Ваш E-mail">
+                <input type="email" placeholder="Ваш E-mail">
                 <input type="text" placeholder="Адрес строительства">
-                <input type="file" name="" id="">
+                <input type="file">
               </div>
               <div class="right">
-                <textarea name="" id=""></textarea>
+                <textarea placeholder="Ваше сообщение"></textarea>
               </div>
             </div>
-            <input data-close-button type="submit" value="Отправить заявку">
+            <div class="btn">
+              <input data-close-button type="submit" value="Отправить заявку">
+            </div>
           </div>
         </form>
       </div>

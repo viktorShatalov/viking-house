@@ -127,45 +127,16 @@ jQuery(document).ready(function () {
         ]
     });
 
-    // modal
-    function modal() {
 
-        const openModalButtons = document.querySelectorAll('[data-modal-target]');
-        const closeModalButtons = document.querySelectorAll('[data-close-button]');
-        const overlay = document.getElementById('overlay');
+    // rangeslider
 
-        openModalButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const modal = document.querySelector(button.dataset.modalTarget)
-                openModal(modal)
-            })
-        })
+    let slider = document.getElementById("myRange");
+    let outputRange = document.querySelector('.building__area-totall')
 
-        overlay.addEventListener('click', () => {
-            const modals = document.querySelectorAll('.modal.active')
-            modals.forEach(modal => {
-                closeModal(modal)
-            })
-        })
+    outputRange.innerHTML = slider.value;
 
-        closeModalButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const modal = button.closest('.modal')
-                closeModal(modal)
-            })
-        })
-
-        function openModal(modal) {
-            if (modal == null) return
-            modal.classList.add('active')
-            overlay.classList.add('active')
-        }
-
-        function closeModal(modal) {
-            if (modal == null) return
-            modal.classList.remove('active')
-            overlay.classList.remove('active')
-        }
+    slider.oninput = function () {
+        outputRange.innerHTML = this.value;
     }
-    modal();
+
 })

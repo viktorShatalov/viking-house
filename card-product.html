@@ -36,7 +36,7 @@
         </p>
       </div>
       <div class="header_btn">
-        <button class="btn" data-modal-target="#modal">
+        <button class="btn" class="uk-button" data-uk-modal="{target:'#modal'}">
           расчитать проект
         </button>
       </div>
@@ -2483,99 +2483,168 @@
       </p>
     </div>
   </footer>
+
   <!-- modal calculator-->
-  <div class="modal" id="modal">
-    <div class="modal__header">
-      <h3>
-        Расчёт проекта
-      </h3>
-      <div data-close-button class="close-button">
-        <span></span>
-      </div>
-    </div>
-    <div class="modal-body">
-      <div class="form">
-        <form action="post" class="modal-form">
-          <div class="about__order">
-            <div class="left">
-              <div class="type_of">
-                <label for="type_of">
-                  <input type="radio" name="type_of" id="">
-                  <input type="radio" name="type_of" id="">
-                  <input type="radio" name="type_of" id="">
-                </label>
+  <div id="modal" class="uk-modal">
+    <div class="uk-modal-dialog">
+      <div class="modal">
+        <div class="modal__header">
+          <h3>
+            Расчёт проекта
+          </h3>
+          <a class="uk-modal-close uk-close"></a>
+        </div>
+        <div class="modal-body">
+          <div class="form">
+            <form action="post" class="modal-form">
+              <div class="about__order">
+                <div class="left">
+                  <div class="type_of">
+                    <legend>
+                      Вид строения:
+                    </legend>
+                    <div class="input__box">
+                      <label>
+                        <input type="radio" name="type_of" value="100" checked id="type_of_1">
+                        Дом из бруса
+                      </label>
+                      <label>
+                        <input type="radio" name="type_of" id="type_of_2">
+                        Каркасный дом
+                      </label>
+                      <label>
+                        <input type="radio" name="type_of" id="type_of_3">
+                        Баня из бруса
+                      </label>
+                    </div>
+                  </div>
+                  <div class="number_of_storeys">
+                    <legend>
+                      Этажность:
+                    </legend>
+                    <div class="input__box">
+                      <label>
+                        <input type="radio" name="number_of_storeys" checked id="number_of_storeys_1">
+                        Один этаж
+                      </label>
+                      <label>
+                        <input type="radio" name="number_of_storeys" id="number_of_storeys_2">
+                        Два этажа
+                      </label>
+                    </div>
+                  </div>
+                  <div class="foundation">
+                    <legend>
+                      Фундамент:
+                    </legend>
+                    <div class="input__box">
+                      <label>
+                        <input type="radio" name="foundation" checked>
+                        Есть на участке
+                      </label>
+                      <label>
+                        <input type="radio" name="foundation">
+                        Свайно-винтовой
+                      </label>
+                    </div>
+                  </div>
+                  <div class="building__area">
+                    <legend>
+                      Площадь застройки,м<sup>2</sup>:
+                    </legend>
+                    <input type="range" min="1" max="150" value="1" class="slider" id="myRange">
+                    <span class="building__area-totall">1</span>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="wall__thickness">
+                    <legend>
+                      Толщина стен:
+                    </legend>
+                    <div class="input__box">
+                      <label>
+                        <input type="radio" name="wall__thickness" checked>
+                        100мм
+                      </label>
+                      <label>
+                        <input type="radio" name="wall__thickness">
+                        150мм
+                      </label>
+                      <label>
+                        <input type="radio" name="wall__thickness">
+                        200мм
+                      </label>
+                    </div>
+                  </div>
+                  <div class="finish">
+                    <legend>
+                      Отделка:
+                    </legend>
+                    <div class="input__box">
+                      <label>
+                        <input type="radio" name="finish" checked>
+                        Без отделки
+                      </label>
+                      <label>
+                        <input type="radio" name="finish">
+                        Под ключ
+                      </label>
+                    </div>
+                  </div>
+                  <div class="workers__home">
+                    <legend>
+                      Проживание рабочих:
+                    </legend>
+                    <div class="input__box">
+                      <label>
+                        <input type="radio" name="workers__home" checked>
+                        Есть на участке
+                      </label>
+                      <label>
+                        <input type="radio" name="workers__home">
+                        Бытовка
+                      </label>
+                    </div>
+                  </div>
+                  <div class="totall__prace">
+                    <legend>
+                      Цена:
+                    </legend>
+                    <p>
+                      <span id="totallPrice">
+                        8 800
+                      </span>
+                      РУБ.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="number_of_storeys">
-                <label for="number_of_storeys">
-                  <input type="radio" name="number_of_storeys" id="">
-                  <input type="radio" name="number_of_storeys" id="">
-                </label>
+              <div class="form_data">
+                <legend>
+                  Ваши данные:
+                </legend>
+                <div class="form-input__modal">
+                  <div class="left">
+                    <input type="text" placeholder="Ваше Имя">
+                    <input type="tel" placeholder="Ваш Tелефон">
+                    <input type="email" placeholder="Ваш E-mail">
+                    <input type="text" placeholder="Адрес строительства">
+                    <input type="file">
+                  </div>
+                  <div class="right">
+                    <textarea placeholder="Ваше сообщение"></textarea>
+                  </div>
+                </div>
+                <div class="btn">
+                  <input data-close-button type="submit" value="Отправить заявку">
+                </div>
               </div>
-              <div class="foundation">
-                <label for="foundation">
-                  <input type="radio" name="foundation" id="">
-                  <input type="radio" name="foundation" id="">
-                </label>
-              </div>
-              <div class="building__area">
-                <input type="text">
-              </div>
-            </div>
-            <div class="right">
-              <div class="wall__thickness">
-                <label for="wall__thickness">
-                  <input type="radio" name="wall__thickness" id="">
-                  <input type="radio" name="wall__thickness" id="">
-                  <input type="radio" name="wall__thickness" id="">
-                </label>
-              </div>
-              <div class="finish">
-                <label for="finish">
-                  <input type="radio" name="finish" id="">
-                  <input type="radio" name="finish" id="">
-                </label>
-              </div>
-              <div class="workers__home">
-                <label for="workers__home">
-                  <input type="radio" name="workers__home" id="">
-                  <input type="radio" name="workers__home" id="">
-                </label>
-              </div>
-              <div class="totall__prace">
-                <p>
-                  <strong>
-                    <span>
-                      8 800
-                    </span>
-                    руб.
-                  </strong>
-                </p>
-              </div>
-            </div>
+            </form>
           </div>
-          <div class="form_data">
-            <p>
-              Ваши данные:
-            </p>
-            <div class="form-input__modal">
-              <div class="left">
-                <input type="text" placeholder="Ваше Bмя">
-                <input type="tel" placeholder="Ваш Tелефон">
-                <input type="text" placeholder="Ваш E-mail">
-                <input type="text" placeholder="Адрес строительства">
-                <input type="file" name="" id="">
-              </div>
-              <div class="right">
-                <textarea name="" id=""></textarea>
-              </div>
-            </div>
-            <input data-close-button type="submit" value="Отправить заявку">
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>
-  <div id="overlay"></div>
   <!-- modal callForm-->
   <div id="modal-callForm" class="uk-modal">
     <div class="uk-modal-dialog">
@@ -2583,30 +2652,30 @@
         <h3>
           Заказать ДОм
         </h3>
-        <div class="close-button uk-modal-close">
-          <span></span>
-        </div>
+        <a class="uk-modal-close uk-close"></a>
       </div>
       <div class="modal-body">
         <div class="form">
           <form action="post" class="modal-form">
             <div class="form_data">
-              <p>
+              <legend>
                 Ваши данные:
-              </p>
+              </legend>
               <div class="form-input__modal">
                 <div class="left">
-                  <input type="text" placeholder="Ваше Bмя">
+                  <input type="text" placeholder="Ваше Имя">
                   <input type="tel" placeholder="Ваш Tелефон">
-                  <input type="text" placeholder="Ваш E-mail">
+                  <input type="email" placeholder="Ваш E-mail">
                   <input type="text" placeholder="Адрес строительства">
-                  <input type="file" name="" id="">
+                  <input type="file">
                 </div>
                 <div class="right">
-                  <textarea name="" id=""></textarea>
+                  <textarea placeholder="Ваше сообщение"></textarea>
                 </div>
               </div>
-              <input data-close-button type="submit" value="Отправить заявку">
+              <div class="btn">
+                <input data-close-button type="submit" value="Отправить заявку">
+              </div>
             </div>
           </form>
         </div>

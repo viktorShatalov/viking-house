@@ -1,64 +1,47 @@
 .modal {
-  position: absolute;
-  top: 75%;
+  position: fixed;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, 0);
   border-radius: 2px;
   box-shadow: 0px 0px 59px 0px rgba(35, 19, 0, 0.58);
   width: 100%;
   max-width: 1000px;
   z-index: 6;
   background-color: $color_modal_bg;
-  @include transition-modal;
 }
-.close-button {
+#modal {
+  .uk-modal-dialog {
+    width: 1000px;
+  }
+}
+.uk-close {
   position: absolute;
   height: 40px;
   width: 40px;
   z-index: 4;
   top: 20px;
   right: 20px;
-  cursor: pointer;
   background-color: $color_white;
   border-radius: 4px;
-  span {
+  opacity: 1;
+  &:after {
+    font-size: 40px;
     position: absolute;
-    top: 18px;
-    right: 7px;
-    width: 25px;
-    height: 5px;
-    background-color: $color_black;
-    transform: rotate(-46deg);
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 25px;
-      height: 5px;
-      background-color: $color_black;
-      transform: rotate(90deg);
-    }
+    top: 9px;
+    right: 4px;
   }
 }
-#overlay {
-  position: fixed;
-  opacity: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  pointer-events: none;
-  z-index: 4;
-  @include transition-modal;
+#myRange {
+  width: 100%;
+  max-width: 220px;
 }
-#overlay.active {
-  opacity: 0.6;
-  pointer-events: all;
-}
-.modal.active {
-  transform: translate(-50%, -50%) scale(1);
+.building__area-totall {
+  display: block;
+  font-size: 1.125em;
+  font-weight: bold;
+  float: right;
+  width: 100px;
 }
 .modal-body {
   @include dspFlex;
@@ -178,5 +161,19 @@ input[type="submit"] {
   .left,
   .right {
     flex: 1 1 50%;
+  }
+}
+// modal call Form
+#modal-callForm {
+  .uk-modal-dialog {
+    padding: 0;
+  }
+  input[type="file"] {
+    margin-left: auto;
+  }
+  .form_data {
+    legend {
+      text-align: center;
+    }
   }
 }

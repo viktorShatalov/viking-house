@@ -85,7 +85,7 @@ jQuery(document).ready(function () {
         ]
     });
     // card-product slider
-    jQuery('.slider-for,.slider-for_modal').slick({
+    jQuery('.slider-for').slick({
         arrows: true,
         dots: false,
         infinite: true,
@@ -105,7 +105,7 @@ jQuery(document).ready(function () {
     });
 
 
-    jQuery('.slider-nav,.slider-nav_modal').slick({
+    jQuery('.slider-nav').slick({
         arrows: true,
         dots: false,
         lazyLoad: "progressive",

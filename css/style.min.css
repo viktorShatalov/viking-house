@@ -2545,12 +2545,13 @@ input[type="submit"]:hover {
 
 #ready__project .all-category-products ul li .description__left {
   overflow: hidden;
-  width: 86%;
+  width: 85%;
 }
 
 #ready__project .all-category-products ul li .description__quantity {
   color: #333333;
   margin: 0 5px;
+  width: 60%;
 }
 
 #ready__project .description__text .name__house {
@@ -2561,8 +2562,8 @@ input[type="submit"]:hover {
 }
 
 #ready__project .description__text .name__house p {
-  line-height: 22px;
-  padding: 0 0 5px;
+  line-height: 20px;
+  padding: 0 20px 5px;
 }
 
 #ready__project .description__text .name__house:hover {

@@ -32,11 +32,12 @@
         }
         .description__left {
           overflow: hidden;
-          width: 86%;
+          width: 85%;
         }
         .description__quantity {
           color: $color_text-p;
           margin: 0 5px;
+          width: 60%;
         }
       }
     }
@@ -48,8 +49,8 @@
       padding: 10px;
       text-align: center;
       p {
-        line-height: 22px;
-        padding: 0 0 5px;
+        line-height: 20px;
+        padding: 0 20px 5px;
       }
       &:hover {
         text-decoration: underline;

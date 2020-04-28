@@ -35,9 +35,8 @@
           width: 85%;
         }
         .description__quantity {
-          color: $color_text-p;
-          margin: 0 5px;
-          width: 60%;
+          color: $color_text-p; 
+          white-space: nowrap;
         }
       }
     }

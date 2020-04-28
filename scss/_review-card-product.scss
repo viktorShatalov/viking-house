@@ -3,8 +3,8 @@
 }
 .first__item {
   .description__quantity {
-    max-width: 125px;
-    width: 100%;
+    white-space: nowrap;
+    text-align: right;
   }
 }
 .individual__review {

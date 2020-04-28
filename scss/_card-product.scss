@@ -13,7 +13,7 @@
   .options {
     @include dspFlex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     .left__options,
     .rigth__options {
       flex: 0 1 50%;
@@ -102,6 +102,9 @@
       display: block;
       @include dspFlex;
       padding: 0 0 15px;
+      a {
+        white-space: nowrap;
+      }
       .description__name {
         display: inline-block;
         position: relative;
@@ -118,11 +121,12 @@
       }
       .description__left {
         overflow: hidden;
-        width: 86%;
+        width: 100%;
       }
       .description__quantity {
         color: $color_text-p;
-        margin: 0 5px;
+        white-space: nowrap;
+        margin: 0 0 0 7px;
       }
     }
   }

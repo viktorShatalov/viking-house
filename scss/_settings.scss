@@ -139,21 +139,29 @@ ul {
   ul {
     @include dspFlex;
     justify-content: center;
-    a {
-      margin: 0 10px;
-      padding: 10px 12px;
-      border: 2px solid $color_pagination;
-      border-radius: 10px;
-      @include transition;
-      li {
-        color: $color_black;
-        font-weight: bold;
+    li {
+      color: $color_black;
+      font-weight: bold;
+      a {
+        margin: 0 10px;
+        padding: 10px 12px;
+        border: 2px solid $color_pagination;
+        border-radius: 10px;
+        @include transition;
+        &:hover,
+        &.active {
+          border: 2px solid $color_pagination-active;
+        }
       }
-      &.active {
-        border: 2px solid $color_pagination-active;
-      }
-      &:hover {
-        border: 2px solid $color_pagination-active;
+      span {
+        margin: 0 10px;
+        padding: 10px 12px;
+        border: 2px solid $color_pagination;
+        border-radius: 10px;
+        @include transition;
+        &[aria-current="page"] {
+          border: 2px solid $color_pagination-active;
+        }
       }
     }
   }

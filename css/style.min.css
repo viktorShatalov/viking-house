@@ -354,7 +354,12 @@ ul {
           justify-content: center;
 }
 
-#pagination ul a {
+#pagination ul li {
+  color: #111111;
+  font-weight: bold;
+}
+
+#pagination ul li a {
   margin: 0 10px;
   padding: 10px 12px;
   border: 2px solid #bfbfbd;
@@ -363,16 +368,20 @@ ul {
   transition: all 0.3s ease;
 }
 
-#pagination ul a li {
-  color: #111111;
-  font-weight: bold;
-}
-
-#pagination ul a.active {
+#pagination ul li a:hover, #pagination ul li a.active {
   border: 2px solid #39b54a;
 }
 
-#pagination ul a:hover {
+#pagination ul li span {
+  margin: 0 10px;
+  padding: 10px 12px;
+  border: 2px solid #bfbfbd;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#pagination ul li span[aria-current="page"] {
   border: 2px solid #39b54a;
 }
 
@@ -1943,7 +1952,7 @@ input[type="submit"]:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .cardProduct__content .options .left__options,
@@ -2079,6 +2088,11 @@ input[type="submit"]:hover {
   padding: 0 0 15px;
 }
 
+.characteristics ul li a,
+.price__options ul li a {
+  white-space: nowrap;
+}
+
 .characteristics ul li .description__name,
 .price__options ul li .description__name {
   display: inline-block;
@@ -2100,13 +2114,14 @@ input[type="submit"]:hover {
 .characteristics ul li .description__left,
 .price__options ul li .description__left {
   overflow: hidden;
-  width: 86%;
+  width: 100%;
 }
 
 .characteristics ul li .description__quantity,
 .price__options ul li .description__quantity {
   color: #333333;
-  margin: 0 5px;
+  white-space: nowrap;
+  margin: 0 0 0 7px;
 }
 
 .price__options .description__quantity strong {
@@ -2550,8 +2565,7 @@ input[type="submit"]:hover {
 
 #ready__project .all-category-products ul li .description__quantity {
   color: #333333;
-  margin: 0 5px;
-  width: 60%;
+  white-space: nowrap;
 }
 
 #ready__project .description__text .name__house {
@@ -2598,8 +2612,8 @@ input[type="submit"]:hover {
 }
 
 .first__item .description__quantity {
-  max-width: 125px;
-  width: 100%;
+  white-space: nowrap;
+  text-align: right;
 }
 
 .individual__review {
@@ -2630,8 +2644,8 @@ input[type="submit"]:hover {
 .reviews__page-content .reviews__items .reviews__item .reviews__img img {
   width: 250px;
   height: 180px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .reviews__page-content .reviews__items .reviews__item .review__content .review__head {

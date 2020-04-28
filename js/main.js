@@ -195,5 +195,65 @@ jQuery(document).ready(function () {
 
     }();
 
+    // validation form 
+    jQuery('form.modal-form').submit(function (e) {
+        e.preventDefault();
+        $('form.modal-form .error').remove();
+        var hasError = false;
+        var $name = $('form input[id="form_name"]');
+        var $email = $('form input[id="form_email"]');
+        var $message = $('form textarea[id="form_message"]');
+        var re = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+        if ($email.val() == '' || !re.test($email.val())) {
+            $email.parent().append('<span class="error">Please provide valid Email.</span>');
+            $email.addClass('inputError');
+            hasError = true;
+        }
+        if ($name.val() == '') {
+            $name.parent().append('<span class="error">Please provide Your name.</span>');
+            $name.addClass('inputError');
+            hasError = true;
+        }
+
+        if ($message.val() == '') {
+            $message.parent().append('<span class="error">Please enter details About Project.</span>');
+            $message.addClass('inputError');
+            hasError = true;
+        }
+        if (!hasError) {
+            var url = "./php/contact-form.php";
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: $(".modal-form").serialize()
+            })
+                .done(function (response) {
+                    // Make sure that the formMessages div has the 'success' class.
+                    $('form.modal-form').removeClass('error');
+                    $('form.modal-form').addClass('success');
+
+                    // Set the message text.
+                    $('form.modal-form > .row').slideUp(300);
+                    $('form.modal-form').prepend('<span class="success">Thank you. Your email was sent successfully.</span>');
+
+                    // Clear the form.
+                    $('form input[name="email"], form input[name="name"], form input[name="subject"], form textarea[name="message"]').val('');
+                })
+                .fail(function (data) {
+                    // Make sure that the formMessages div has the 'error' class.
+                    $('form.modal-form').removeClass('success');
+                    $('form.modal-form').addClass('error');
+
+                    // Set the message text.
+                    if (data.responseText !== '') {
+                        $('form.modal-form').text(data.responseText);
+                    } else {
+                        $('#snackbar').text('Oops! An error occured and your message could not be sent.');
+                    }
+                });
+        }
+        return false;
+    });
 
 })

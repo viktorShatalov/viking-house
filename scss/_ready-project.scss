@@ -61,7 +61,7 @@
 #video__reviews {
   .video__reviews {
     width: 24%;
-    margin: 20px 0;
+    margin: 20px 5px;
     @include boxShadow_video;
     iframe {
       height: 100%;
@@ -69,7 +69,6 @@
   }
   .content {
     @include dspFlex;
-    justify-content: space-between;
     flex-wrap: wrap;
   }
 }

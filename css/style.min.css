@@ -2571,7 +2571,7 @@ input[type="submit"]:hover {
 
 #video__reviews .video__reviews {
   width: 24%;
-  margin: 20px 0;
+  margin: 20px 5px;
   -webkit-box-shadow: 10px 15px 15px 5px rgba(37, 25, 2, 0.23);
           box-shadow: 10px 15px 15px 5px rgba(37, 25, 2, 0.23);
 }
@@ -2584,9 +2584,6 @@ input[type="submit"]:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -2750,6 +2747,7 @@ input[type="submit"]:hover {
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
   padding: 0 0 50px;
+  max-width: 550px;
 }
 
 .contacts__content .left h3,
@@ -2845,7 +2843,7 @@ input[type="submit"]:hover {
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .header,
   .contacts__content,
   .flex-coneiner,
@@ -3128,6 +3126,10 @@ input[type="submit"]:hover {
   #review__form div,
   #contacts__form div {
     margin: 10px auto;
+  }
+  #advantages .content .left_content,
+  #advantages .content .right__content {
+    margin: 0 auto;
   }
   #footer .conteiner {
     -ms-flex-wrap: wrap;

@@ -12,9 +12,6 @@
   padding: 20px;
   line-height: 22px;
   @include boxShadow;
-  .review,
-  .review__signature {
-  }
   .review__signature {
     margin-top: 10px;
     font-weight: bold;

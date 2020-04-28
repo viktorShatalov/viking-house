@@ -23,25 +23,38 @@
   .map {
     overflow: inherit;
     iframe {
-      width: 550px;
+      width: 100%;
       height: 218px;
     }
   }
 }
+
 .contacts__form {
-  max-width: 550px;
+  @include dspFlex;
+  justify-content: space-between;
   h6 {
     font-size: 1.5em;
     text-align: center;
     text-transform: uppercase;
   }
 }
+.contacts__slider {
+  width: 100%;
+  max-width: 550px;
+  .slider__item {
+    max-width: 550px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
 #contacts__form {
   width: 100%;
   max-width: 550px;
   padding-bottom: 30px;
-  textarea {
-  }
   input,
   input[type="file"] {
     max-width: 255px;

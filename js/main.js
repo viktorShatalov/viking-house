@@ -1,23 +1,5 @@
 jQuery(document).ready(function () {
 
-    // Preloader 
-
-    // function preloader() {
-    //     var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-    //     var preloader = jQuery('#preloader');
-    //     if (!isMobile) {
-    //         setTimeout(function () {
-    //             preloader.addClass('preloaded');
-    //         }, 350);
-    //         setTimeout(function () {
-    //             preloader.remove();
-    //         }, 1500);
-    //     } else {
-    //         preloader.remove();
-    //     }
-    // }
-    // preloader()
-
     // not-active menu
     jQuery('a[aria-current="page"]').on('click', function () {
         return false;
@@ -127,6 +109,15 @@ jQuery(document).ready(function () {
         ]
     });
 
+    // contacts slider
+    jQuery('.contacts__slider').slick({
+        arrows: false,
+        dots: false,
+        infinite: true,
+        autoplay: true,
+        lazyLoad: "progressive",
+        slidesToShow: 1,
+    });
 
     // calculator
 

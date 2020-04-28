@@ -289,7 +289,7 @@ button::-moz-focus-inner {
 
 /* Main image in popup */
 img.mfp-img {
-  width: 900px;
+  width: 800px;
   height: auto;
   display: block;
   line-height: 0;

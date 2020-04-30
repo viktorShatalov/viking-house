@@ -214,7 +214,7 @@
       padding: 25px 0 15px;
       text-align: center;
       .name__house {
-        width: 190px;
+        width: 215px;
         margin: 0 auto 15px;
         line-height: 22px;
       }
@@ -225,18 +225,9 @@
 // map
 
 .map {
-  min-width: 58%;
-  overflow: hidden;
-  padding-bottom: 35%;
-  position: relative;
-  height: 0;
-  iframe {
-    left: 0;
-    top: 0;
-    width: 1200px;
-    height: 350px;
-    position: absolute;
-  }
+  padding-bottom: 1em;
+  height: 400px;
+  width: 100%; 
 }
 //  about us
 

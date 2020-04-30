@@ -16,6 +16,7 @@
       padding: 10px 0;
       margin: 0;
       font-weight: bold;
+      color: $color_black;
       span {
         font-weight: normal;
       }
@@ -52,16 +53,18 @@
     }
   }
 }
-#contacts__form {
-  width: 100%;
-  max-width: 550px;
-  padding-bottom: 30px;
-  input,
-  input[type="file"] {
-    max-width: 255px;
-  }
-  input[type="file"] {
-    font-size: 0.85em;
-    padding: 8px;
+#wpcf7-f360-o1 {
+  .wpcf7-form {
+    width: 100%;
+    max-width: 550px;
+    padding-bottom: 30px;
+    input,
+    input[type="file"] {
+      max-width: 255px !important;
+    }
+    input[type="file"] {
+      font-size: 0.85em;
+      padding: 8px !important;
+    }
   }
 }

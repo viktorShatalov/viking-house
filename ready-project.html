@@ -10,10 +10,13 @@
   <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="css/uikit.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://yastatic.net/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/jquery/jquery.min.js"></script>
   <script src="js/uikit.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=b079f485-9824-44f0-8744-93938cf4b875&lang=ru_RU"
+    type="text/javascript"></script>
   <script src="js/main.js"></script>
 </head>
 
@@ -407,13 +410,7 @@
             Карта построенных обьектов
           </h2>
         </div>
-        <div class="map m-auto">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9507.22452389149!2d30.306042911351287!3d59.9379869470003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310b32cbe2e9%3A0x74e032aa0505dfc!2z0JPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3Ri9C5INCt0YDQvNC40YLQsNC2!5e0!3m2!1sru!2sua!4v1587501116056!5m2!1sru!2sua"
-            width="1200" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0">
-          </iframe>
-        </div>
+        <div id="map_container" style="width: 100%; height: 400px;" class="m-auto"></div>
       </div>
     </section>
     <!-- video reviews -->
@@ -690,7 +687,6 @@
     </div>
   </footer>
   <!-- modal -->
-  
 </body>
 
 

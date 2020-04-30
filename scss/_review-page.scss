@@ -48,7 +48,7 @@
   }
 }
 #review__form,
-#contacts__form {
+#wpcf7-f360-o1 .wpcf7-form {
   & div {
     margin: 10px 0;
   }
@@ -67,9 +67,11 @@
     background-color: $color_btn-bg;
     max-width: 250px;
   }
-  input[type="file"] {
-    padding: 5px;
-    max-width: 350px;
+  span {
+    input[type="file"] {
+      padding: 5px;
+      max-width: 350px;
+    }
   }
   textarea {
     @include textarea;

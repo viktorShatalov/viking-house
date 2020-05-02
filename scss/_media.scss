@@ -19,10 +19,7 @@
   .site_description {
     margin: 0 auto;
   }
-  .reviews__slider .slick-prev,
-  .slider-nav .slick-prev {
-    left: 43.5%;
-  }
+
   #advantages .content .left_content,
   #advantages .content .right__content {
     margin: 0 auto;
@@ -39,7 +36,8 @@
   h2::before,
   h2::after,
   .header .work_schedule,
-  .site_description {
+  .site_description,
+  .reviews__slider .slider__item .item__img {
     display: none;
   }
   .header {
@@ -121,6 +119,15 @@
   }
   .navbar.active {
     left: 0;
+  }
+
+  .reviews__slider .slick-prev,
+  .slider-nav .slick-prev {
+    left: 38.5%;
+  }
+  .reviews__slider .slick-next,
+  .slider-nav .slick-next {
+    right: 44.5%;
   }
 
   // footer

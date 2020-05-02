@@ -9,6 +9,7 @@
     flex: 0 1 50%;
     padding: 0 0 50px;
     max-width: 550px;
+    margin: 0 auto;
     h3,
     h4,
     p {
@@ -34,6 +35,11 @@
 .contacts__form {
   @include dspFlex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  .left,
+  .right{
+    margin: 0 auto;
+  }
   h6 {
     font-size: 1.5em;
     text-align: center;

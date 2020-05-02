@@ -92,7 +92,8 @@
     padding: 20px 0;
   }
 }
-#wpcf7-f351-o2 {
+#wpcf7-f351-o2,
+#wpcf7-f365-o1 {
   .form_data {
     .btn {
       padding: 0;
@@ -107,6 +108,9 @@
       color: $color_black;
     }
   }
+}
+input[type="radio"] {
+  margin-right: 10px;
 }
 .form-input__modal {
   @include dspFlex;

@@ -16,10 +16,11 @@
 }
 
 @mixin living-house-area {
-  .living-house-area {
+  .living-house-area,
+  .living-house-size {
     position: absolute;
     top: 4px;
-    left: 4px;
+    right: 4px;
     width: 50px;
     height: 50px;
     padding: 5px;
@@ -31,5 +32,8 @@
     align-items: center;
     justify-content: center;
     font-weight: bold;
+  }
+  .living-house-size {
+    left: 4px;
   }
 }

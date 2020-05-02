@@ -13,16 +13,20 @@
   .options {
     @include dspFlex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-bottom: 50px;
     .left__options,
     .rigth__options {
-      flex: 0 1 50%;
+      flex: 1 1 50%;
     }
     .left__options {
       position: relative;
+      width: 100%;
+      max-width: 550px;
+      margin: 0 auto;
       .magnifier_btn {
         position: absolute;
-        right: 20px;
+        right: 10px;
         top: 10px;
         z-index: 6;
         @include transition;
@@ -36,6 +40,7 @@
         background-color: $color_white;
       }
       .slider-for {
+        margin: 0 auto;
         margin-bottom: 20px;
         width: 100%;
         max-width: 580px;
@@ -190,6 +195,7 @@
     border-top-right-radius: 4px;
     border: 2px solid $color_circle-advantage;
     border-bottom: none;
+    cursor: pointer;
     @include transition;
   }
   .uk-active {
@@ -284,6 +290,7 @@
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
+    margin: 0 auto;
     iframe {
       position: absolute;
       top: 0;
@@ -298,10 +305,12 @@
     @include dspFlex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 70px;
     .left_content,
     .right__content {
-      margin: 0 10px;
+      flex: 1 1 550px;
+      margin: 0 auto;
       & .advantages__items {
         .item {
           width: 100%;

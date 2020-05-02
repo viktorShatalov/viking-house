@@ -213,6 +213,38 @@
     .item__description {
       padding: 25px 0 15px;
       text-align: center;
+      ul {
+        li {
+          display: block;
+          @include dspFlex;
+          padding: 10px 5px;
+          font-size: 0.9em;
+          .description__name {
+            display: inline-block;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              left: 102%;
+              right: -9999px;
+              bottom: 0;
+              top: 0;
+              border-bottom: 1px solid $color_btn-bg;
+              opacity: 0.35;
+            }
+          }
+          .description__left {
+            overflow: hidden;
+            width: 85%;
+            text-align: left;
+          }
+          .description__quantity {
+            color: $color_text-p;
+            white-space: nowrap;
+            font-weight: bold;
+          }
+        }
+      }
       .name__house {
         width: 215px;
         margin: 0 auto 15px;
@@ -227,7 +259,7 @@
 .map {
   padding-bottom: 1em;
   height: 400px;
-  width: 100%; 
+  width: 100%;
 }
 //  about us
 
@@ -304,8 +336,9 @@
     @include dspFlex;
     justify-content: space-between;
     align-items: flex-start;
+    margin: 0 6px;
     .item__img {
-      padding: 5px 20px;
+      padding: 5px 0px;
       img {
         width: 270px;
         height: 210px;
@@ -313,7 +346,9 @@
       }
     }
     .item__text {
-      max-width: 855px;
+      max-width: 850px;
+      padding: 5px 10px;
+      margin: 0 15px;
       .name {
         margin-bottom: 10px;
         font-size: 1.125em;
@@ -322,10 +357,7 @@
         margin-bottom: 10px;
       }
       .text {
-        line-height: 24px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        width: 100%;
+        line-height: 22px;
       }
       .btn__details {
         margin-top: 25px;

@@ -5,6 +5,7 @@
   @include dspFlex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 20px 10px;
   margin: 0 auto;
   .btn {
@@ -39,6 +40,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
+  padding-bottom: 10px;
   ul {
     @include dspFlex;
     justify-content: center;

@@ -116,6 +116,7 @@ ul {
       }
       a {
         color: $color_link-active;
+        white-space: nowrap;
         &:hover {
           opacity: 0.75;
         }
@@ -165,5 +166,11 @@ ul {
         }
       }
     }
+  }
+}
+.ymaps-2-1-76-balloon-content__footer {
+  text-align: center;
+  a:hover {
+    color: $color_btn-bg;
   }
 }

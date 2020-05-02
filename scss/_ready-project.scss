@@ -9,6 +9,9 @@
     padding: 10px 0;
     .slider__item {
       margin: 10px 9px;
+      &:hover a {
+        opacity: 0.85;
+      }
     }
     ul {
       li {
@@ -35,24 +38,25 @@
           width: 85%;
         }
         .description__quantity {
-          color: $color_text-p; 
+          color: $color_text-p;
           white-space: nowrap;
+          font-weight: bold;
         }
       }
     }
   }
   .description__text {
-    .name__house {
+    a {
       font-size: 1em;
-      color: $color_pseudo-el;
+      color: $color_btn-bg;
       padding: 10px;
       text-align: center;
+      font-weight: bold;
       p {
         line-height: 20px;
         padding: 0 20px 5px;
-      }
-      &:hover {
-        text-decoration: underline;
+        color: $color_btn-bg;
+        font-weight: bold;
       }
     }
   }
@@ -61,7 +65,7 @@
 #video__reviews {
   .video__reviews {
     width: 24%;
-    margin: 20px 5px;
+    margin: 20px 2.5px;
     @include boxShadow_video;
     iframe {
       height: 100%;

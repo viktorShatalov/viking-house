@@ -1,1 +1,122 @@
-jQuery(document).ready(function(){jQuery('a[aria-current="page"]').on("click",function(){return!1}),jQuery(".burger").click(function(){jQuery(".burger,.navbar").toggleClass("active"),jQuery("html,body").toggleClass("lock")}),jQuery(".js-tab-trigger").click(function(){var e=jQuery(this).attr("data-tab"),r=jQuery('.js-tab-content[data-tab="'+e+'"]');jQuery(".js-tab-trigger.active").removeClass("active"),jQuery(this).addClass("active"),jQuery(".js-tab-content.active").removeClass("active"),r.addClass("active")}),jQuery("#tab__slider-1,#tab__slider-2,#tab__slider-3,#slider").slick({arrows:!1,dots:!0,infinite:!1,lazyLoad:"progressive",slidesToShow:4,slidesToScroll:1,variableWidth:!0,autoplay:!1,autoplaySpeed:2200,responsive:[{breakpoint:480,settings:{slidesToShow:1,centerMode:!0}}]}),jQuery(".reviews__slider").slick({arrows:!0,dots:!1,infinite:!0,lazyLoad:"progressive",slidesToShow:1,slidesToScroll:1,variableWidth:!0,autoplay:!1,responsive:[{breakpoint:480,settings:{centerMode:!0}}]}),jQuery(".slider-for").slick({arrows:!0,dots:!1,infinite:!0,autoplay:!1,lazyLoad:"progressive",asNavFor:".slider-nav",fade:!0,draggable:!1,responsive:[{breakpoint:480,settings:{centerMode:!0}}]}),jQuery(".slider-nav").slick({arrows:!0,dots:!1,lazyLoad:"progressive",asNavFor:".slider-for",slidesToShow:3,infinite:!1,autoplay:!1,focusOnSelect:!0,draggable:!1,responsive:[{breakpoint:480,settings:{infinite:!0,arrows:!1,slidesToShow:2,centerMode:!0,centerPadding:"0"}}]}),jQuery(".contacts__slider").slick({arrows:!1,dots:!1,infinite:!0,autoplay:!0,lazyLoad:"progressive",slidesToShow:1})});
+jQuery(document).ready(function () {
+
+    // not-active menu
+    jQuery('a[aria-current="page"]').on('click', function () {
+        return false;
+    });
+
+    //  mobile-menu
+
+    jQuery('.burger').click(function () {
+        jQuery('.burger,.navbar').toggleClass('active');
+        jQuery('html,body').toggleClass('lock');
+    })
+
+    // tabs+slider
+
+    jQuery('.js-tab-trigger').click(function () {
+        var id = jQuery(this).attr('data-tab'),
+            content = jQuery('.js-tab-content[data-tab="' + id + '"]');
+
+        jQuery('.js-tab-trigger.active').removeClass('active');
+        jQuery(this).addClass('active');
+
+        jQuery('.js-tab-content.active').removeClass('active');
+        content.addClass('active');
+    });
+
+    // sliders
+
+    jQuery('#tab__slider-1,#tab__slider-2,#tab__slider-3,#slider').slick({
+        arrows: false,
+        dots: true,
+        infinite: false,
+        lazyLoad: "progressive",
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        variableWidth: true,
+        autoplay: false,
+        autoplaySpeed: 2200,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                }
+            }
+        ]
+    });
+
+    jQuery('.reviews__slider').slick({
+        arrows: true,
+        dots: false,
+        infinite: true,
+        lazyLoad: "progressive",
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        autoplay: false,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    centerMode: true,
+                }
+            }
+        ]
+    });
+    // card-product slider
+    jQuery('.slider-for').slick({
+        arrows: true,
+        dots: false,
+        infinite: true,
+        autoplay: false,
+        lazyLoad: "progressive",
+        asNavFor: '.slider-nav',
+        fade: true,
+        draggable: false,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    centerMode: true,
+                }
+            }
+        ]
+    });
+
+
+    jQuery('.slider-nav').slick({
+        arrows: true,
+        dots: false,
+        lazyLoad: "progressive",
+        asNavFor: '.slider-for',
+        slidesToShow: 3,
+        infinite: false,
+        autoplay: false,
+        focusOnSelect: true,
+        draggable: false,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 3,
+                    centerMode: true,
+                    centerPadding: '0',
+                }
+            }
+        ]
+    });
+
+    // contacts slider
+    jQuery('.contacts__slider').slick({
+        arrows: false,
+        dots: false,
+        infinite: true,
+        autoplay: true,
+        lazyLoad: "progressive",
+        slidesToShow: 1,
+    });
+
+})
